@@ -1,0 +1,63 @@
+.container {
+    height: 100vh; /*vertical */
+    /*Cambios*/
+    margin: 10px;
+    padding: 10px;
+    overflow: auto;
+
+    background-color: rgb(187, 187, 187);
+}
+
+.divCabecera {
+    height: 100px;
+    margin: 10px;
+
+    background-color: rgb(235, 87, 87);
+}
+
+.divPrincipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*1 fracción, o 1 parte del TODO en el que está contenido*/
+    height: 100%;
+    margin: 10px;
+
+    background-color: rgb(100, 197, 226);
+}
+
+.zonaNavegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: rgb(148, 148, 219);
+}
+
+.zonaNavegacion div{
+    width: 1fr;
+    min-height: 50px;
+    height: auto;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    background-color: rgb(196, 196, 196);
+    border-radius: 10px;
+}
+
+.zonaNavegacion div:hover{ /*Funciona solo si se pasa el ratón*/
+    background-color: rgb(175, 174, 172);
+}
+a{
+    text-decoration: none; /*quitamos el subrayado*/
+    color:inherit;
+}
+
+.zonaContenido{
+    grid-column: 2 / 5; /*Ocupa de la segunda a la quinta columna*/
+    margin: 5px;
+    padding: 5px;
+
+    border-radius: 6px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    background-color: rgb(255, 0, 251);
+}
