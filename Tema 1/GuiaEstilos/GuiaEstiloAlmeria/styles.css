@@ -9,7 +9,7 @@
 }
 
 .divCabecera {
-    height: 100px;
+    height: 250px;
     margin: 10px;
 
     background-color: rgb(255, 207, 207);
@@ -22,7 +22,7 @@
     height: 100%;
     margin: 10px;
 
-    background-color: rgb(100, 197, 226);
+    background-color: rgb(161, 161, 161);
 }
 
 .zonaNavegacion {
@@ -68,4 +68,15 @@ a{
 .zonaNavegacion h3 {
     
     font-size: 20pt;
+}
+.divCabecera{
+    background-image: url("imagenes/banderia\ de\ almeria.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-position-y: top;
+    -moz-background-clip: padding;
+}
+.piePagina{
+    background-color: azure;
 }
