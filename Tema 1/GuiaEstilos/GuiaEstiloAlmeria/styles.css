@@ -1,3 +1,8 @@
+/*Importamos las fuentes escogidas en Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+
 /* Estilo General*/
 .container {
     height: 100vh; /*vertical */
@@ -9,11 +14,30 @@
 }
 
 .divCabecera {
+    display: flex;
+    align-items: center;
     height: 250px;
     margin: 10px;
-
     background-color: rgb(255, 207, 207);
     border-radius: 15px;
+    padding: 10px; /* Añade un poco de margen a la cabecera */
+
+}
+.logoCabecera {
+    margin-right: 20px;
+    max-height: 100%;
+
+    /* Difuminamos un poco los bordes del logo*/
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.5);
+}
+
+.tituloCabecera{
+    flex-grow: 1; /* Hace que el título ocupe el espacio restante en el divCabecera */
+    text-align: center;
+    font-family: Roboto; /* Cambié la fuente a Arial para este ejemplo */
+    margin: 0; /* Elimina el margen por defecto del h1 */
+        
 }
 
 .divPrincipal {
@@ -33,6 +57,7 @@
 
     background-color: rgb(255, 255, 255);
     background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 159, 159));
+    font-family: Roboto;
 }
 
 .zonaNavegacion div{
@@ -44,14 +69,21 @@
     margin: 15px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    font-family: Roboto;
 }
 
 .zonaNavegacion div:hover{ /*Funciona solo si se pasa el ratón*/
-    background-color: rgb(175, 174, 172);
+    background-color: rgb(228, 199, 142);
+    font-family: Roboto;
 }
-a{
+.zonaNavegacion a{
     text-decoration: none; /*quitamos el subrayado*/
     color:inherit;
+    font-family: Roboto;
+}
+
+.zonaNavegacion h3{
+    font-family: Roboto;
 }
 
 .zonaContenido{
@@ -62,22 +94,61 @@ a{
     border-radius: 6px;
     border-left: 2px solid black;
     border-top: 2px solid black;
-    background-color: rgb(181, 233, 156);
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+
+}
+.zonaContenido h1{
+    text-align: center;
+    font-family: roboto;
+}
+.zonaContenido h2{
+    margin: 20px;
+    text-decoration: solid;
+    font-size: 20pt;
+    font-family: Roboto;
+}
+.zonaContenido p{
+    margin: 20px;
+    text-justify: auto;
+    font-size: 14pt;
+    font-family: Open Sans;
+}
+.zonaContenido ul{
+    font-size: 14pt;
+    margin-left: 25px;
+    font-family: Open Sans;
+}
+
+.zonaBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    overflow: hidden;
+}
+.zonaBanner figure img{
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
 }
 
 /* Tipografía de la zona de navegación */
 .zonaNavegacion h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    margin-left: 5px;
+    font-family: Montserrat;
     font-size: 20pt;
 }
-.divCabecera{
-    background-image: url("imagenes/banderia\ de\ almeria.jpg");
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    background-position-y: top;
-    -moz-background-clip: padding;
+a{
+    font-family: Montserrat;
 }
-.piePagina{
-    background-color: azure;
+
+.piePagina {
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    padding: 10px; /* Ajusta el espaciado interior según tus preferencias */
+    font-size: 14px; /* Tamaño de fuente para el texto del pie de página */
 }
