@@ -1,0 +1,23 @@
+
+Etiquetas HTML
+
+<head> Metadatos de la pagina
+	charset=UTF-8 -->  codificación de caracteres
+	title --> nombre de la pagina
+<p> Parrafo
+<h1,2,3,4,5,6> Encabezado
+<a> enlaces
+	href --> url
+	name --> enlace hacia otro elemento de la pagina
+<ul> lista desordenada
+<ol> lista ordenada
+	<li> elemento de la lista
+<form> formulario
+<table> tabla
+	<tr> filas
+	<td> celda
+	<th> celda en negrita
+	<caption> titulo de la tabla
+	<tfoot> Pie de pagina
+	<tbody> cuerpo de la tabla
+	

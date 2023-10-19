@@ -1,0 +1,9 @@
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+/* Especificidad en CSS*/
+table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
