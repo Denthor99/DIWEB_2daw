@@ -1,0 +1,16 @@
+/* Header de la primera tabla*/
+.header__h1{
+    color: blue;
+    text-align: center;
+}
+.section__table--centrar {
+    display: flex;
+    place-content: center;
+}
+
+.footer__parrafo{
+    text-align: center;
+}
+.footer__parrafo b{
+    color: orange;
+}

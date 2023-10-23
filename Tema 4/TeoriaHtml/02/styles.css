@@ -1,0 +1,47 @@
+/* Especificidad en CSS*/
+/* Menos específico */
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+/* Especificidad de elemento HTML */
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: 200px;
+    justify-content: center;
+}
+
+.tabla_firstRow{
+    height: 50px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.row__td--right-bottom{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.row__td--bottom{
+    border-bottom: 1px solid gray;
+}
+
+.row__td--righ{
+    border-right: 1px solid gray;
+}
+
+h1 {
+    color: brown;
+}
+caption {
+    font-size: 0.5em;
+}
+
+/* Aplicamos herencia (todos los elemento tr que tengan th) */
+/*nth-child(1) hace referencia del  primer hijo de tr*/
+tr th:nth-child(1){
+    width: 10px;
+    background-color: crimson;
+}

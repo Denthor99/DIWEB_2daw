@@ -1,0 +1,19 @@
+Elementos más importantes en CSS
+
+Epecificidad de clases
+	- * -> Hace referencia a todo el documento (menos específico)
+	- elementos, pseudoelementos -> aplican a todos esos elementos. Un ejemplo es aplicarle a todos los parrafos la misma fuente.
+	Los pseudoelementos son aquellos elementos que no tienen una etiqueta propia en HTML.
+	-  class, atributos, pseudoclases -> aplica a los elementos con cierta clase. Estas clases vienen dadas por el programador. Ej: <h1 class="h1-Naranja">
+	
+	
+
+Modelo de cajas 
+
+Nomenclatura BEM
+Sugiere una manera estructurada de nombrar nuestras clases, basado en las propiedades del elemento en cuestión
+La estructura de dicha nomenclatura sería la siguiente:
+
+		Block__Element--modifier
+Ejemplo: Queremos añadir estilos a un botón que se encuentra en el footer. Le queremos añadir 
+		.footer__button
