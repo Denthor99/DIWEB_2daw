@@ -3,10 +3,13 @@
     color: blue;
     text-align: center;
 }
+
+/* Centrar las tablas a la página */
 .section__table--centrar {
     display: flex;
     justify-content: center;
 }
+
 
 /* Primera tabla */
 .section_table1{
@@ -28,6 +31,7 @@
     border-top: 1px solid;
     border-left: 1px solid;
 }
+
 
 /* Segunda tabla */
 .section_table2{
@@ -95,6 +99,8 @@
 .table2__tr_fila18--siniestro{
     background-color: rgb(77, 59, 59);
 }
+
+
 /* Estilo del Footer*/
 .footer__parrafo--alineacion{
     text-align: center;

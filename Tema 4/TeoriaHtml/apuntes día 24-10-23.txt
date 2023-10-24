@@ -1,0 +1,15 @@
+Modelo de cajas
+A medida que vayamos introduciendo contenido (margin
+
+DIV
+Por defecto ocupa la línea entero
+
+Span
+No ocupan la línea entera, ideal para ordenar elementos a nivel de línea
+
+Header de altra 200px, y width 100%
+Tres cajas en su interior. la primera caja mide 100 px, y la segunda 50px
+
+Header 200x100
+caja 1- azul, respecto al margen de la izquierda un 30%
+caja2 - roja, 50 px, pegada al margen de la derecha. Dentro de esa caja hay 3 cajas más. El border radius de las cajas pequeñas es de 10 px

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría HTML III - Especificidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aprendiendo especificidad</h1>
+    </header>
+
+    <main>
+        <div>
+            <p>Primer parrafo de la página: </p>
+        </div>
+        <div>
+            <span>
+                <p>Segundo parrafo de la página</p>
+            </span>
+            <span>
+                <p>Tercero parrafo de la página</p>
+            </span>
+        </div>
+        <div class="cuerpo__divPrueba">
+            Contenido
+        </div>
+        <div class="cuerpo__divPrueba cuerpo__divPrueba--red">
+            Contenido
+        </div>
+        <div class="cuerpo__divPrueba cuerpo__divPrueba--blue">
+            Contenido
+        </div>
+        <span class="cuerpo__spanPrueba">
+            Span 1
+        </span>
+        <span class="cuerpo__spanPrueba">
+            Span 2
+        </span>
+        <span class="cuerpo__spanPrueba">
+            Span 3
+        </span>
+    </main>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, sapiente, optio dolorum nesciunt illum sit placeat quas eligendi enim consectetur excepturi nulla voluptate inventore porro numquam id veniam nisi ducimus.</p>
+    </footer>
+    
+</body>
+</html>

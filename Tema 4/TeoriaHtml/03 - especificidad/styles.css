@@ -1,0 +1,38 @@
+h1, p, h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+div p {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(51, 255, 0);
+}
+div>p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:blue;
+}
+
+/* Prueba modelo de cajas */
+.cuerpo__divPrueba{
+    color:blueviolet;
+    background-color: peru;
+    margin-left:10px;
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.cuerpo__divPrueba--red{
+    position:relative;
+    background-color: rgb(255, 0, 0);
+    top: 50px;
+    left: 40px;
+}
+.cuerpo__divPrueba--blue{
+    background-color: rgb(48, 96, 255);
+}
+
+.cuerpo__spanPrueba{
+    color:black;
+    background-color: hotpink;
+    margin-left: 10px;
+}

@@ -1,11 +1,30 @@
 Elementos más importantes en CSS
 
 Epecificidad de clases
-	- * -> Hace referencia a todo el documento (menos específico)
-	- elementos, pseudoelementos -> aplican a todos esos elementos. Un ejemplo es aplicarle a todos los parrafos la misma fuente.
-	Los pseudoelementos son aquellos elementos que no tienen una etiqueta propia en HTML.
-	-  class, atributos, pseudoclases -> aplica a los elementos con cierta clase. Estas clases vienen dadas por el programador. Ej: <h1 class="h1-Naranja">
-	
+	##### Asterisco
+		-> Menos específico
+		-> Abarca a todo el documento
+		-> Ejemplo, una fuente que se use en toda la página
+
+	#### Elementos y pseudoelementos como el Body, Head, Footer
+		-> Aplican a todos esos elementos que se concreten.
+
+	#### Clases, atributos y pseudoclases
+		-> Aplica a los elementos con cierta clase CSS
+		-> Clases inventadas.
+		-> Representadas en CSS con .
+
+	#### id
+		-> Elementos con ese id único
+		-> Representados en CSS con #
+
+	#### inline
+		-> Acociados al atributo HTML style"estilo_correspondiente"
+
+
+	#### Etiqueta CSS !important 
+		-> El más predominante cuando hay varios estilos (desaconsejado)
+
 	
 
 Modelo de cajas 
