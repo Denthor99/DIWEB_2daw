@@ -1,16 +1,104 @@
 /* Header de la primera tabla*/
-.header__h1{
+.header__h1--colorfuente{
     color: blue;
     text-align: center;
 }
 .section__table--centrar {
     display: flex;
-    place-content: center;
+    justify-content: center;
 }
 
-.footer__parrafo{
+/* Primera tabla */
+.section_table1{
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.table1__tr--bottom{
+    border-bottom: 2px solid black;
+}
+
+.table1__th--right{
+    border-right: 2px solid black;
+}
+.table1__td--allPosition{
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+/* Segunda tabla */
+.section_table2{
+    width: 390px;
+    height: 500px;
+    border-collapse: collapse;
+}
+
+.table2__tr--bottom-bgcolor{
+    border-bottom: 2px solid black;
+    background-color: rgb(207, 0, 0);
+}
+.table2__tr_fila1--acero{
+    background-color: grey;
+}
+.table2__tr_fila2--volador{
+    background-color: rgb(8, 100, 185);
+}
+.table2__tr_fila3--agua{
+    background-color: rgb(93, 22, 185);
+}
+.table2__tr_fila4--hielo{
+    background-color: rgb(68, 233, 255);
+}
+
+.table2__tr_fila5--planta{
+    background-color: rgb(17, 78, 15);
+}
+.table2__tr_fila6--bicho{
+    background-color: rgb(106, 167, 78);
+}
+.table2__tr_fila7--electrico{
+    background-color: rgb(191, 247, 88);
+}
+.table2__tr_fila8--normal{
+    background-color:bisque;
+}
+.table2__tr_fila9--roca{
+    background-color: rgb(179, 132, 32);
+}
+.table2__tr_fila10--tierra{
+    background-color: rgb(145, 87, 0);
+}
+.table2__tr_fila11--fuego{
+    background-color: rgb(245, 139, 0);
+}
+.table2__tr_fila12--lucha{
+    background-color: rgb(250, 38, 38);
+}
+.table2__tr_fila13--hada{
+    background-color: rgb(255, 187, 249);
+}
+.table2__tr_fila14--psiquico{
+    background-color: rgb(165, 42, 42);
+}
+.table2__tr_fila15--veneno{
+    background-color: rgb(194, 83, 151);
+}
+.table2__tr_fila16--dragon{
+    background-color: rgb(163, 134, 162);
+}
+.table2__tr_fila17--fantasma{
+    background-color: rgb(69, 13, 143);
+}
+.table2__tr_fila18--siniestro{
+    background-color: rgb(77, 59, 59);
+}
+/* Estilo del Footer*/
+.footer__parrafo--alineacion{
     text-align: center;
 }
-.footer__parrafo b{
+.footer__parrafo--alineacion b{
     color: orange;
 }
