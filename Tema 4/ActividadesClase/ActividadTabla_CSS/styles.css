@@ -1,5 +1,5 @@
 /* Header de la primera tabla*/
-.header__h1--colorfuente{
+.header__h1--colorfuente-centrar{
     color: blue;
     text-align: center;
 }
@@ -35,8 +35,8 @@
 
 /* Segunda tabla */
 .section_table2{
-    width: 390px;
-    height: 500px;
+    width: 400px;
+    height: 550px;
     border-collapse: collapse;
 }
 
@@ -100,11 +100,15 @@
     background-color: rgb(77, 59, 59);
 }
 
+/* Manejo de la primera celda (vacía)*/
+.table2__primeraCelda--tamanio{
+    width: 30px;
+}
 
 /* Estilo del Footer*/
-.footer__parrafo--alineacion{
+.footer__parrafo--resaltadoColor-centrar{
     text-align: center;
 }
-.footer__parrafo--alineacion b{
+.footer__parrafo--resaltadoColor-centrar b{
     color: orange;
 }
