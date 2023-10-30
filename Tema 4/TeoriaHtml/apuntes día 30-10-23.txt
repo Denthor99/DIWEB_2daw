@@ -1,0 +1,27 @@
+position
+	- relative -> el elemento se situa con respecto a su posición original. 
+	- absolute -> el elemento se reposiciona respecto al último elemento posicionado. Es decir, el último elemento que tenga una posición "relative" será la referencia de "absolute"
+	- "fixed" -> el elemento se queda fijo en la pantalla
+El primer elmento posicionado es el body
+
+Reposicionar elementos
+top, right, left, bottom -> propiedades para posicionar el elemento en una "caja"
+La posición natura de los elementos es el margen superior izquierdo (top:0; left:0). Por defecto "static"
+
+top:0; right:0; left:auto -> margen superior derecho
+left: 0; bottom: 0 -> margen inferior izquierdo
+right: 0; bottom: 0 -> margen inferior derecho
+
+z-index
+ propiedad que se utiliza para controlar la superposición de elementos en una página web. Es especialmente útil cuando tienes elementos superpuestos, como divs, imágenes u otros 
+ elementos posicionados con propiedades CSS como position: absolute, position: relative o position: fixed.
+
+ DISPLAY
+ La etiqueta div se situa en bloque (display: blok)
+ La etiqueta span se situa en línea (display: inline). Los display inline no se pueden redimensionar
+ Existe display: inline-block, que nos permite redimensionar
+ Display: grid nos permite dimensionar la página por filas y columnas
+ Display: flex se comporta como si los elementos fuesen span, es decir, se añaden en línea. Con flex-direction podemos elegir row o colum para orientar el contenido
+	- align-items: center
+	- justify-content: center
+	Lo anterior nos permite

@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+}
+.seccion-principal{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+/*div 1*/
+.seccion-principal__div1{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+.seccion-principal__div2{
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(255, 0, 212);
+}
+
+
+.seccion-principal__div3{
+    width: 50px;
+    height: 50px;
+    right:0;
+    bottom:0;
+    top:20px;
+
+    /* Para realizar los cambios, modificamos la posicion */
+
+    background-color: rgb(0, 255, 42);
+}
