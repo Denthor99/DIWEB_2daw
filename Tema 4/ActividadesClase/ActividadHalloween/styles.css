@@ -1,0 +1,109 @@
+/*
+
+Colores principales
+#FF9900
+#FF6600
+#009900
+
+Colores secundarios
+#330033
+#330000
+#ffffff
+#000000
+
+Tipografías
+1. Holocausto Zombie
+2. Roboto
+3. Noto Serif Japanese
+*/
+
+/* Importamos las tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap');
+@font-face {
+	font-family: "ZombieHolocaust";
+	src: url("fonts/Zombie_Holocaust.ttf") format("truetype");
+}
+
+/* Fuente por defecto */
+*{
+    font-family: 'Roboto',sans-serif;
+}
+/* Quitamos el margen por defecto */
+body{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Roboto',sans-serif;
+}
+
+p,span,div{
+    font-family: 'Noto Serif JP',serif;
+
+}
+
+#tituloPagina{
+    font-family: 'ZombieHolocaust',sans-serif;
+
+}
+
+.header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__zonaTitulo{
+    height: 100%;
+    width:20%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.2s linear;
+}
+
+.header__zonaTitulo:hover{
+    background-color: #FF6600;
+    transform: scale(1.05);
+
+    font-size: 1.2em; /*em es una medida que toma por referencia*/
+}
+
+#zonaTitulo__logo img{
+    width: 60px;
+    height: auto;
+}
+
+
+.header__zonaNavegacion{
+    height: 100%;
+    width:40%;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Establecemos aire entre elementos */
+    gap: 25px;
+}
+
+/* Quitamos el diseño por defecto de los enlaces */
+.header__zonaNavegacion a{
+    text-decoration: none;
+    color: #330000;
+}
+
+.zonaNavegacion__div{
+    padding: 5px;
+    transition: 0.15s ease-out;
+}
+.zonaNavegacion__div:hover{
+    border-bottom: 3px solid #330000;
+    border-radius: 5px;
+}
+
+.zonaNavegacion__div h3{
+    margin:0;
+}
