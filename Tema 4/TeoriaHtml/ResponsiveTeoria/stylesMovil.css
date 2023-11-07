@@ -1,0 +1,30 @@
+@media all and (min-width:0px) and (max-width:360px){
+    .container{
+        background-color: rgb(160, 54, 54);
+    }
+    .container__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+        grid-auto-rows: minmax(15vh,20vh);
+     }
+     
+     .zonaArticulo1{
+        grid-column: 1 / -1;
+        height:20vh;
+        background-color: brown;
+     }
+     
+     .zonaArticulo2{
+        grid-column: 1 / -1;
+        height: 20vh;
+        background-color: aqua;
+     }
+     
+     .zonaArticulo3{
+        grid-column: 1 / -1;
+        height: 20vh;
+        background-color: peru;
+     }
+
+}

@@ -1,0 +1,33 @@
+@media all and (min-width:360px) and (max-width:920px){
+    .container{
+        background-color: rgb(54, 61, 160);
+    }
+    .container__grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:10px;
+        grid-auto-rows: minmax(15vh,20vh);
+    }
+    
+    .zonaArticulo1{
+        grid-column-start: 2;
+        grid-column: span 2;
+        height:20vh;
+        background-color: brown;
+    }
+    
+    .zonaArticulo2{
+        grid-column-start: 3;
+        grid-column: span 2;
+        height: 20vh;
+        background-color: aqua;
+    }
+    
+    .zonaArticulo3{
+        grid-column-start: 2;
+        grid-column: span 2;
+        height: 20vh;
+        background-color: peru;
+    }
+
+}

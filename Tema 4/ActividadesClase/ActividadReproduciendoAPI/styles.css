@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: aliceblue;
 }
 
 /* Añadimos las fuentes correspondientes*/
@@ -38,17 +39,20 @@ body{
 }
 
 .header__zonaNavegacion{
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 .header__zonaNavegacion a{
+    height: 50px;
     color: aliceblue;
     text-decoration: none;
     padding: 10px;
 }
 .header__zonaNavegacion a:hover{
+    height:50px;
     text-decoration: underline;
     text-decoration-color: aliceblue;
     background-color: rgb(206, 60, 60);
@@ -65,5 +69,12 @@ body{
     top:0;
     position: sticky;
     grid-column: 3/4;
+    background-color: white;
+}
+
+.main__zonaNavegacion p{
+    color:darkcyan;
+    font-size: 0.9em;
+    padding: 0;
 }
 
