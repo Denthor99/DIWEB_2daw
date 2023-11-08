@@ -1,0 +1,23 @@
+REALIZAR HEADER
+
+Empresa Nightmare Productions
+
+Colores principales
+#FF9900 Naranja claro
+#FF6600 
+#009900 Verde oscuro
+
+Colores secundarios
+#330033 morado casi negro
+#330000
+#FFFFFF blanco
+#000000 negro
+
+Para título tipografía agresiva
+Holocausto Zombie. Tipografía display, por lo que se usará solo para el título
+
+Para los titulos usaremos Roboto
+Para los párrafos Noto Serig Japanese
+
+Iconografía empresa
+

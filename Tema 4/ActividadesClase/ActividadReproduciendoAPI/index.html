@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="header__zonaNavegacion">
-        <nav>
+        <nav class="header__zonaNavegacion__nav">
           <a href="https://pokeapi.co/" title="Home">Home</a>
           <a href="https://pokeapi.co/about" title="About">About</a>
           <a href="index.html" title="API v2">API v2</a>
@@ -36,15 +36,327 @@
       <div class="main__zonaNavegacion">
         <nav>
           <h3>Contents</h3>
-          <p>Information</p>
-          <p>Fair Use Policy</p>
-          <p>Slack</p>
-          <p>Wrapper Libraries</p>
-          <hr />
-          <p>Resources Lists/Pagination</p>
+          <ul>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#fair_use">Fair Use Policy</a></li>
+            <li><a href="#slack">Slack</a></li>
+            <li><a href="#wrapper_libraries">Wrapper Libraries</a></li>
+            <li>Resources Lists/Pagination</li>
+          </ul>
         </nav>
       </div>
-      <div class="main__zonaContenido"></div>
+      <div class="main__zonaContenido">
+        <p>If you were using v1 of this API, please switch to v2 (this page). <a href="https://pokeapi.co/docs/v1">Read More...</a></p>
+        <p><strong>Quick tip</strong>: Use your browser's "find on page" feature to search for specific resource types (<kbd>Ctrl+F</kbd> or <kbd>Cmd+F</kbd>).</p>
+
+        <h3 id="information">Information</h3>
+        <p>This is a <strong>consumption-only</strong> API — only the HTTP GET method is available on resources.</p>
+        <p>No authentication is required to access this API, and all resources are fully open and available. Since the move to static hosting in November 2018, rate limiting has been removed entirely, but we still encourage you to limit the frequency of requests to limit our hosting costs.</p>
+        
+        <h3 id="fair_use">Fair Use Policy</h3>
+        <p>PokéAPI is free and open to use. It is also very popular. Because of this, we ask every developer to abide by our fair use policy. People not complying with the fair use policy will have their IP address permanently banned.</p>
+        <p>PokéAPI is primarily an educational tool, and we will not tolerate denial of service attacks preventing people from learning.</p>
+        <p>Rules:</p>
+        <ul>
+          <li>Locally cache resources whenever you request them.</li>
+          <li>Be nice and friendly to your fellow PokéAPI developers.</li>
+        </ul>
+
+        <h3 id="slack">Slack</h3>
+        <p>Have questions? Ideas? Notice something amiss here in the docs? Hit us up on Slack. Sign up right <a href="https://pokeapi.slack.com/join/shared_invite/zt-1l4vpwa8k-muQmMrFfv7TIFGrVWzjzcw#/shared-invite/email">here</a> then visit our <a href="https://pokeapi.slack.com/">Slack</a> team. We encourage you to come here before opening a ticket on GitHub, so we can keep our issues nice and organized. There are also a solid group of people using the API who may already have answers or plans from experience.</p>
+      
+        <h3 id="wrapper_libraries">Wrapper Libraries</h3>
+        <ul>
+          <li>
+              <strong>Node Server-side with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/PokeAPI/pokedex-promise-v2" rel="nofollow">Pokedex Promise v2</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Thomas Asadurian and Alessandro Pezz &#xE9;
+          </li>
+          <li>
+              <strong>Browser-side with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/PokeAPI/pokeapi-js-wrapper" rel="nofollow">pokeapi-js-wrapper</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Alessandro Pezz &#xE9;
+          </li>
+          <li>
+              <strong>Python 3 with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/GregHilmes/pokebase" rel="nofollow">PokeBase</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Greg Hilmes
+          </li>
+          <li>
+              <strong>Python 2/3 with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/PokeAPI/pokepy" rel="nofollow">Pokepy</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Paul Hallett
+          </li>
+          <li>
+              <strong>Kotlin (and Java)</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/PokeAPI/pokekotlin" rel="nofollow">PokeKotlin</a>
+              <!-- -->
+              by 
+              <!-- -->
+              sargunster
+          </li>
+          <li>
+              <strong>Java (Spring Boot) with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/SirSkaro/pokeapi-reactor" rel="nofollow">pokeapi-reactor</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Benjamin Churchill
+          </li>
+          <li>
+              <strong>.NET (C#, VB, etc)</strong>
+              :
+              <!-- -->
+              <a href="https://gitlab.com/PoroCYon/PokeApi.NET" rel="nofollow">PokeApi.NET</a>
+              <!-- -->
+              by 
+              <!-- -->
+              PoroCYon
+          </li>
+          <li>
+              <strong>.NET Standard</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/mtrdp642/PokeApiNet" rel="nofollow">PokeApiNet</a>
+              <!-- -->
+              by 
+              <!-- -->
+              mtrdp642
+          </li>
+          <li>
+              <strong>Swift</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/kinkofer/PokemonAPI" rel="nofollow">PokemonAPI</a>
+              <!-- -->
+              by 
+              <!-- -->
+              kinkofer
+          </li>
+          <li>
+              <strong>PHP</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/danrovito/pokephp" rel="nofollow">PokePHP</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Dan Rovito
+          </li>
+          <li>
+              <strong>PHP</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/lmerotta/phpokeapi" rel="nofollow">PHPok &#xE9;API</a>
+              <!-- -->
+              by 
+              <!-- -->
+              lmerotta
+          </li>
+          <li>
+              <strong>Ruby</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/rdavid1099/poke-api-v2" rel="nofollow">Poke-Api-V2</a>
+              <!-- -->
+              by 
+              <!-- -->
+              rdavid1099
+          </li>
+          <li>
+              <strong>Go</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/mtslzr/pokeapi-go" rel="nofollow">pokeapi-go</a>
+              <!-- -->
+              by 
+              <!-- -->
+              mtslzr
+          </li>
+          <li>
+              <strong>Crystal</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/henrikac/pokeapi" rel="nofollow">pokeapi</a>
+              <!-- -->
+              by 
+              <!-- -->
+              henrikac
+          </li>
+          <li>
+              <strong>Typescript with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/Gabb-c/pokenode-ts" rel="nofollow">Pokenode-ts</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Gabb-c
+          </li>
+          <li>
+              <strong>Rust with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://crates.io/crates/rustemon" rel="nofollow">Rustemon</a>
+              <!-- -->
+              by 
+              <!-- -->
+              mlemesle
+          </li>
+          <li>
+              <strong>Asynchronous Python wrapper with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/beastmatser/aiopokeapi" rel="nofollow">aiopokeapi</a>
+              <!-- -->
+              by 
+              <!-- -->
+              beastmatser
+          </li>
+          <li>
+              <strong>Scala 3 with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/juliano/pokeapi-scala" rel="nofollow">pokeapi-scala</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Juliano Alves
+          </li>
+          <li>
+              <strong>Elixir wrapper with auto caching</strong>
+              :
+              <!-- -->
+              <a href="https://github.com/HenriqueArtur/Max-Elixir-PokeAPI" rel="nofollow">Max-Elixir-PokeAPI</a>
+              <!-- -->
+              by 
+              <!-- -->
+              Henrique Artur
+          </li>
+      </ul>
+      <hr>
+      <br>
+        <h2 class="zonaMain__contenido--seccion">Resource Lists/Pagination <span class="seccion__span">(group)</span></h2>
+            <p>Calling any API endpoint without a resource ID or name will return a paginated list of available resources for that API. 
+                By default, a list "page" will contain up to 20 resources. If you would like to change this just add a 'limit' query parameter to the GET request, 
+                e.g. ?limit=60. You can use 'offset' to move to the next page, e.g. ?limit=60&offset=60.</p>
+            <h3>Named <span class="seccion__span">(endpoint)</span></h3>
+            <p><span class="subseccion__url">GET</span> https://pokeapi.co/api/v2/{endpoint}/</p>
+            <div class="zonaMain__JSONViewer">
+                <div class="zonaMain__JSONViewer--json">
+                    <ul style="border: 0px; padding: 0px; margin: 0.5em 0px 0.5em 0.125em; list-style: none; user-select: none; background-color: #ffffff;">
+                        <li style="padding: 0px; margin: 0px;">
+                            <ul style="padding: 0px; margin: 0px; list-style: none;">
+                                <li style="padding-top: 0.25em; padding-right: 0px; margin-left: 0.875em; user-select: text; overflow-wrap: break-word; 
+                                padding-left: 1.25em; text-indent: -0.5em; word-break: break-all">
+                                    <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px 0.5em 0px 0px;">count: </label>
+                                    <span style="color: rgb(176, 101, 49);">248</span>
+                                </li>
+                                <li style="padding-top: 0.25em; padding-right: 0px; margin-left: 0.875em; user-select: text; overflow-wrap: break-word; 
+                                padding-left: 1.25em; text-indent: -0.5em; word-break: break-all">
+                                    <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px 0.5em 0px 0px;">next: </label>
+                                    <span style="color: rgb(108, 116, 31)">"https://pokeapi.co/api/v2/ability/?limit=20&offset=20"</span>
+                                </li>
+                                <li style="padding-top: 0.25em; padding-right: 0px; margin-left: 0.875em; user-select: text; overflow-wrap: break-word; 
+                                padding-left: 1.25em; text-indent: -0.5em; word-break: break-all">
+                                    <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px 0.5em 0px 0px;">previous: </label>
+                                    <span style="color: rgb(220, 118, 118);">null</span>
+                                </li>
+                                <li style="position: relative; padding-top: 0.25em; margin-left: 0px; padding-left: 0px;">
+                                    <div style="display: inline-block; padding-right: 0.5em; padding-left: 0px; cursor: pointer;">
+                                        <div style="margin-left: 0px; transition: all 150ms ease 0s; transform: rotateZ('90deg'); transform-origin: 45% 50%; 
+                                        position: relative; line-height: 1.1em; font-size: 0.75em; color: rgb(77, 76, 77);">▷</div>
+                                    </div>
+                                    <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px; padding: 0px; user-select: inherit; cursor: pointer;">results: </label>
+                                    <span style="padding-left: 0.5em; cursor: default; color: rgb(128, 130, 128);">[] 1 item</span>
+                                    <ul style="padding: 5px; margin-left: 5px; list-style: none; display: block;">
+                                        <li style="position: relative; padding-top: 0.25em; margin-left: 0.875em; padding-left: 0px;">
+                                            <div style="display: inline-block; padding-right: 0.5em; padding-left: 0px; cursor: pointer;">
+                                                <div style="margin-left: 0px; transition: all 150ms ease 0s; transform: rotateZ('90deg'); transform-origin: 45% 50%; 
+                                                position: relative; line-height: 1.1em; font-size: 0.75em; color: rgb(77, 76, 77);">▷</div>
+                                            </div>
+                                            <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px; padding: 0px; user-select: inherit; cursor: pointer;">0: </label>
+                                            <span style="padding-left: 0.5em; cursor: default; color: rgb(128, 130, 128);">{} 2 keys</span>
+                                            <ul style="padding: 5px; margin-left: 20px; list-style: none;">
+                                                <li>
+                                                    <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px; padding: 0px; user-select: inherit;">name: </label>
+                                                    <span style="color: rgb(108, 116, 31)">"stench"</span>
+                                                </li>
+                                                <li>
+                                                    <label style="display: inline-block; color: rgb(77, 76, 77); margin: 0px; padding: 0px; user-select: inherit;">url: </label>
+                                                    <span style="color: rgb(108, 116, 31)">"https://pokeapi.co/api/v2/ability/1/"</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <label><input type="checkbox" checked>View raw JSON (0.213 kB, 11 lines)</label>
+                </div>
+            </div>
+            <h4 class="zonaMain__contenido--seccion">NamedAPIResourceList <span class="seccion__span">(type)</span></h4>
+            <table class="zonaMain__contenido--tabla">
+                <thead>
+                    <tr>
+                        <th class="tabla__columna--head">Name</th>
+                        <th style="width: 50%;">Description</th>
+                        <th class="tabla__columna--head">Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tabla__columna--body">count</td>
+                        <td>The total number of resources available from this API.</td>
+                        <td>integer</td>
+                    </tr>
+                    <tr>
+                        <td class="tabla__columna--body">next</td>
+                        <td>The URL for the next page in the list.</td>
+                        <td>string</td>
+                    </tr>
+                    <tr>
+                        <td class="tabla__columna--body">previous</td>
+                        <td>The URL for the previous page in the list.</td>
+                        <td>string</td>
+                    </tr>
+                    <tr>
+                        <td class="tabla__columna--body">results</td>
+                        <td>A list of named API resources.</td>
+                        <td>list <a href="">NamedAPIResource</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </div>
+      </div>
     </main>
   </body>
 </html>
