@@ -6,9 +6,9 @@
     <title>Documentation - PokéAPI</title>
     <link rel="stylesheet" href="styles.css" />
     <link
-      rel="shortcut icon"
-      href="images/pokeapi_logo.png"
-      type="image/x-icon"
+      rel="icon"
+      href="images/pokeapi_logo_head.png"
+      type="image/png"
     />
   </head>
   <body>
@@ -16,18 +16,17 @@
       <div class="header__zonaLogo">
         <div class="zonaLogo_logo">
           <a href="https://pokeapi.co/"
-            ><img src="images/pokeapi_logo.png" alt="pokeapi logo"
+             title="PokéAPI"><img src="images/pokeapi_logo.png" alt="pokeapi logo"
           /></a>
         </div>
       </div>
       <div class="header__zonaNavegacion">
         <nav class="header__zonaNavegacion__nav">
-          <a href="https://pokeapi.co/" title="Home">Home</a>
-          <a href="https://pokeapi.co/about" title="About">About</a>
-          <a href="index.html" title="API v2">API v2</a>
-          <a href="https://pokeapi.co/docs/graphql" title="GraphQL v1beta"
-            >GraphQL v1beta</a
-          >
+          <a class="header__zonaNavegacion__enlace" href="https://pokeapi.co/" title="Home">Home</a>
+          <a class="header__zonaNavegacion__enlace" href="https://pokeapi.co/about" title="About">About</a>
+          <a class="header__zonaNavegacion__enlace" href="index.html" title="API v2">API v2</a>
+          <a class="header__zonaNavegacion__enlace" href="https://pokeapi.co/docs/graphql" title="GraphQL v1beta"
+            >GraphQL v1beta</a>
         </nav>
       </div>
     </header>
@@ -41,7 +40,9 @@
             <li><a href="#fair_use">Fair Use Policy</a></li>
             <li><a href="#slack">Slack</a></li>
             <li><a href="#wrapper_libraries">Wrapper Libraries</a></li>
+            <hr/>
             <li><a href="#resources">Resources Lists/Pagination</a></li>
+            <hr/>
           </ul>
         </nav>
       </div>
@@ -230,21 +231,15 @@
           <li>
               <strong>Asynchronous Python wrapper with auto caching</strong>
               :
-              <!-- -->
               <a href="https://github.com/beastmatser/aiopokeapi" rel="nofollow">aiopokeapi</a>
-              <!-- -->
               by 
-              <!-- -->
               beastmatser
           </li>
           <li>
               <strong>Scala 3 with auto caching</strong>
               :
-              <!-- -->
               <a href="https://github.com/juliano/pokeapi-scala" rel="nofollow">pokeapi-scala</a>
-              <!-- -->
               by 
-              <!-- -->
               Juliano Alves
           </li>
           <li>
@@ -265,7 +260,7 @@
                 By default, a list "page" will contain up to 20 resources. If you would like to change this just add a 'limit' query parameter to the GET request, 
                 e.g. ?limit=60. You can use 'offset' to move to the next page, e.g. ?limit=60&offset=60.</p>
             <h3>Named <span class="seccion__span">(endpoint)</span></h3>
-            <p><span class="subseccion__url">GET</span> https://pokeapi.co/api/v2/{endpoint}/</p>
+            <p><span class="get">GET</span> https://pokeapi.co/api/v2/{endpoint}/</p>
             <div class="zonaMain__JSONViewer">
                 <div class="zonaMain__JSONViewer--json">
                     <ul style="border: 0px; padding: 0px; margin: 0.5em 0px 0.5em 0.125em; list-style: none; user-select: none; background-color: #ffffff;">
@@ -358,5 +353,20 @@
         </div>
       </div>
     </main>
+    <footer>
+        <hr class="hr__footer">
+        <br/>
+        <p>
+            Created by <a>Paul Hallett</a> and other
+            <a href="https://github.com/PokeAPI/pokeapi#contributing">PokéAPI contributors</a>
+            around the world. Pokémon and Pokémon character names are trademarks of
+            Nintendo.
+        </p>
+        <span class="footer__spans">
+            <span class="footer__span__status">status</span>
+            <span class="footer__span__systems">All Systems Operational</span>
+        </span>
+        <br/>
+    </footer>
   </body>
 </html>
