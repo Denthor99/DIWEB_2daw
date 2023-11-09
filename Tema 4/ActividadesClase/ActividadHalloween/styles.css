@@ -173,3 +173,36 @@ p,span,div{
     font-size: 3em;
     color: #FF6600;
 }
+
+@media all and (max-width:920px){
+    .header{
+        flex-direction: column;
+        z-index: 1;
+    }
+    
+    .header__zonaTitulo{
+        height: 100%;
+        width:100%;
+    }
+
+    .header__zonaNavegacion{
+        height: 100%;
+        width:100%;
+        background-color: #ffffff;
+        z-index:1;
+    }
+
+    .main__zonaImagen{
+        grid-column: 2/12;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__zonaDescripcion{
+        grid-column: 2/12;
+        border-left:0;
+        border-bottom: 3px solid #330033;
+        padding: 10px;
+    }
+
+}
