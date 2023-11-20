@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEEEE;
+  border-bottom: 2px #DDDDDD;
+}
+.header nav {
+  display: flex;
+  height: 100%;
+}
+.header a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=estilos.css.map */

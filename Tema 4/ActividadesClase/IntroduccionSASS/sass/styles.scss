@@ -1,0 +1,22 @@
+// Uso de las variables
+$color-primary: #F0F0F0;
+$color-secundary: #1D1D1D;
+
+body{
+    background-color: $color-primary; 
+}
+
+.header{
+    height: 10vh;
+    background-color: $color-secundary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .header__div{
+        height: 100%;
+        width: 3em;
+        color: $color-primary;
+    }
+}

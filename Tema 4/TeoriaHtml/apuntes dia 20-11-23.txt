@@ -1,0 +1,35 @@
+SASS (Syntactically Awesome StyleSheets)
+
+Es un Preprocesador de CSS, es decir, es una herramienta que nos permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS 
+Introduce variables
+
+ej: 
+    $color-primario: #F0F0F0;
+    body {
+        background-color: $color-primario;
+    }
+
+Anidacion (nesting)
+ej: 
+    nav {
+        ul{
+
+        }
+        
+        li {
+
+        }
+
+        a {
+
+        }
+    }
+
+Instalación:
+    - Abrimos una terminal de windows (cmd)
+    - Si tenemos instalado node.js, y el gestor de paquetes npm, ejecutamos el siguiente comando para su instalación: "npm install -g sass"
+    - Usamos el comando sass --version para comprobar si se ha instalado correctamente
+
+Compilación/Transpilación
+    - Compilación manual: sass [archivo.scss]:[archivo.css]
+    - Compilación automática: sass --watch [archivo.scss]:[archivo.css]

@@ -1,0 +1,43 @@
+// Creación de variables a usar (colores)
+// Textos
+$color-texto_defecto: #222222;
+$cabecera-texto: #FFFFFF;
+$cabecera-fons: #000000;
+$footer-texto: #FFFFFF;
+$footer-fons: #3B3B3B;
+
+// Enlaces
+$enlace: #CC0000;
+$enlace_hover: #2222;
+
+// Menu de navegación
+$navegacion-enlace: #2222;
+$navegacion-enlace_hover: #CC0000;
+$navegacion-borde: #CC0000;
+
+// Bordes y fondo
+$bordes: #DDDDDD;
+$fondo: #EEEEEE;
+
+// Modificamos los valores por defecto del body
+body{
+    margin: 0;
+    padding: 0;
+}
+// Header
+.header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $fondo;
+    border-bottom: 2px $bordes;
+    nav{
+        display: flex;
+        height: 100%;
+    }
+    a {
+        text-decoration: none;
+        
+    }
+}
