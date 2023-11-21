@@ -26,18 +26,36 @@ body{
 }
 // Header
 .header{
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $fondo;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color: $cabecera-fons;
     border-bottom: 2px $bordes;
-    nav{
-        display: flex;
-        height: 100%;
+
+    .header__imagen{
+        grid-column: 3/11;
     }
-    a {
-        text-decoration: none;
+    .header__titulo{
+        grid-column: 3/11;
+
+        h1{
+            color: $cabecera-texto;
+        }
+    }
+    
+}
+
+// nav 
+.nav_zonaNavegacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    div {
+        padding-left: 1em;
+        padding-right: 1em;
         
     }
 }

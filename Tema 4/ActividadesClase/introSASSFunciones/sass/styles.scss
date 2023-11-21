@@ -1,0 +1,78 @@
+// Definición de variables
+$color-fondo: #FFFFFF;
+$header-fondo: #000000;
+$nav-fondo: #F0F0F0;
+
+$color-letra: #000000;
+$header-letra: #FFFFFF;
+$nav-letra: #222222;
+
+$nav-borde-color: #b31312;
+
+// Definimos funciones
+
+// Función cambiar el fondo y la letra
+@mixin cambiar-fondo-y-letra($color-nuevo-fondo: #FFFFFF,$color-nuevo-letra: #000000){
+    background-color: $color-nuevo-fondo;
+    color: $color-nuevo-letra;
+}
+
+// Función para establecer grid
+@mixin establecer-grid($columnas:12){
+    display: grid;
+    grid-template-columns: repeat($columnas,1fr);
+}
+
+// Reestablecemos
+body {
+    margin: 0;
+}
+
+.header{
+    @include cambiar-fondo-y-letra($header-fondo, $header-letra);
+    @include establecer-grid();
+    h1{
+        grid-column: 3/11;
+    }
+}
+
+.nav__bar{
+    @include cambiar-fondo-y-letra($nav-fondo,$nav-letra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    div{
+        padding-left: 1em;
+        padding-right: 1em;
+        a{
+            text-decoration: none;
+            color:inherit;
+            font-size: 1.05em;
+            padding: 1em;
+        }
+        a:hover{
+            border-bottom: 2px solid $nav-borde-color;
+            border-left: 2px solid $nav-borde-color;
+            border-right: 2px solid $nav-borde-color;
+            border-top: 2px solid $nav-borde-color;
+            border-radius: 150%;
+        }
+
+        .a__activo{
+            border-bottom: 3px solid $nav-borde-color;
+        }
+    }
+}
+
+.main__content{
+    @include cambiar-fondo-y-letra(-nuevo-fondo, -nuevo-letra);
+    @include establecer-grid();
+
+    .main__publicacion{
+        grid-column: 3/11;
+    }
+}

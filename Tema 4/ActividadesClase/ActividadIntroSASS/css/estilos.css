@@ -4,19 +4,33 @@ body {
 }
 
 .header {
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #EEEEEE;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #000000;
   border-bottom: 2px #DDDDDD;
 }
-.header nav {
-  display: flex;
-  height: 100%;
+.header .header__imagen {
+  grid-column: 3/11;
 }
-.header a {
-  text-decoration: none;
+.header .header__titulo {
+  grid-column: 3/11;
+}
+.header .header__titulo h1 {
+  color: #FFFFFF;
+}
+
+.nav_zonaNavegacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.nav_zonaNavegacion div {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 /*# sourceMappingURL=estilos.css.map */

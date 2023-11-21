@@ -1,0 +1,24 @@
+Funciones en SASS
+    - Definición: 
+    @mixin cambiar-color-fondo($parametro:#FFFFFF){
+        background-color: $parametro;
+    }
+
+Llamada a una función
+    div {
+        @include cambiar-color-fondo();
+        // Si queremos añadir un valor 
+        @include cambiar-color-fondo(#FF0000);
+    }
+
+Funcion crear-grid
+    @mixin crear-grid ($columnas:12){
+        display-grid;
+        grid-template-columns: repeat($columnas, 1fr);
+    }
+
+Llamada a esa Funcion
+.divEjemplo{
+    @include cambiar-color-fondo(#FF0000);
+    @include crear-grid(8);
+}
