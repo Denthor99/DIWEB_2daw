@@ -1,0 +1,5 @@
+Importación
+
+En _variables.scss estarán todas las funciones y variables
+En styles.scss deberemos usar @use "variable.scss" (nombre sin guion bajo)
+Tenemos una hoja de estilo del _

@@ -17,20 +17,29 @@ body {
 }
 .header .header__titulo h1 {
   color: #FFFFFF;
+  font-family: "Arial", sans-serif;
 }
 
-.nav_zonaNavegacion {
+.nav__zonaNavegacion {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 2em;
   padding-bottom: 1em;
   padding-top: 1em;
+  border-bottom: 3px solid #3B3B3B;
 }
-.nav_zonaNavegacion div {
+.nav__zonaNavegacion div {
   padding-left: 1em;
   padding-right: 1em;
+}
+.nav__zonaNavegacion div a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.1333333333);
+}
+.nav__zonaNavegacion div a:hover {
+  border-bottom: 2px solid #CC0000;
 }
 
 /*# sourceMappingURL=estilos.css.map */
