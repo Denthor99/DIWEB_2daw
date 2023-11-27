@@ -1,0 +1,26 @@
+NODE.JS
+Necesitaremos tener instalado el gestor de paquetes npm. El siguiente paso es el Module Bundler (empaquetador de modulos), un software capaz de crear los bundles de código 
+Javascript, es decir, los paquetes de código necesarios para poder llevar a producción un proyecto frontend, realizando la transpilación del código y el empaquetado de los 
+módulos en uno o varios archivos compactados, minimizados y por tanto optimizados.
+	Module Bundler más usados
+		- Parcel -> MB usado por nosotros
+		- Webpack
+Parcel nos permite generar nuestra aplicación en un entorno de desarrollo
+El navegador usa javascript puro
+Programadores con React trabajan con JSX
+CSS nativo no se usa para programar directamente, usamos transpiradores  como SASS, LESS para convertir esa programación en CSS nativo (lo que usa el navegador)
+
+INSTALACION PARSEL
+	- npm -v para comprobar la version del gestor de paquetes
+	- Usando cd navegamos hacia esa carpeta
+	- ejecutamos npmm init y añadimos los datos correspondientes
+	- Se nos generará un archivo llamado package.json
+	- npm install --save-dev parcel
+
+SERVER
+	- npx parcel src/index.html
+BUILD
+	- npm run build
+INICIAR
+	- npm run start
+

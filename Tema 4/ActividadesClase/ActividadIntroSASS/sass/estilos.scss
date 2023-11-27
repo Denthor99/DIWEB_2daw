@@ -19,6 +19,17 @@ $navegacion-borde: #CC0000;
 $bordes: #DDDDDD;
 $fondo: #EEEEEE;
 
+
+// FUENTES A UTILIZAR
+// Importamos la fuente sin serifa a usar, junto a las correspondientes asignaciones de 
+
+// Fuente sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+$fuente-sanSerif: 'Lato',sans-serif;
+
+// Fuente con serifa
+//$fuente-serif
+
 // Modificamos los valores por defecto del body
 body{
     margin: 0;
@@ -41,7 +52,8 @@ body{
 
         h1{
             color: $cabecera-texto;
-            font-family: 'Arial', sans-serif;
+            font-family: $fuente-sanSerif;
+            font-size: 3.5em;
         }
     }
     
@@ -67,6 +79,7 @@ body{
             text-decoration: none;
             color: $color-texto_defecto;
             padding-bottom: 5px;
+            font-family: $fuente-sanSerif;
         }
         a:hover{
             border-bottom: 3px solid $enlace;
@@ -96,6 +109,7 @@ body{
         h1{
             font-size: 3em;
         }
+        
     }
     .main__parrafoIntroductorio{
         grid-column: 3/11;
@@ -139,9 +153,30 @@ body{
         p{
             text-align: justify;
         }
+        .textoPrincipal__cita{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            background-color: $bordes;
+            padding-bottom: 10px;
+            border-left: 4px solid $enlace_hover;
+            p{
+                margin-left: 5%;
+                margin-right: 5%;
+                text-align: justify;
+            }
+        }
     }
     .main__zonaVideo{
-        grid-column: 3/11;
+        grid-column: 4/10;
+        iframe{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
     }
     .main__zonaBiografia{
         grid-column: 4/10;
@@ -165,6 +200,42 @@ body{
         a{
             text-decoration: none;
             color:$enlace;
+        }
+    }
+    .main__listas{
+        grid-column: 3/11;
+        padding-bottom: 10px;
+        h1{
+            font-size: 3em;
+        }
+        img{
+            padding-right:3px;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        a{
+            text-decoration: none;
+            color:$enlace;
+            //font-size: 1.1em;
+        }
+        ul{
+            list-style: square;
+        }
+        .listas__titulo{
+            list-style: none;
+            font-size: 1.2em;
+        }
+        .listas__p{
+            font-size: 1.1em;
+        }
+        .listas__p-cursivo{
+            font-size: 1.2em;
+            font-style: italic;
+            a{
+                text-decoration: none;
+                color: $enlace;
+            }
         }
     }
 }

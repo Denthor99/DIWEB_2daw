@@ -1,0 +1,17 @@
+{
+  "name": "proyectousesass_ii",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba uso de parcel",
+  "source":"src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build":"parcel build"
+  },
+  "author": "Daniel Alfonso Rodriguez Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3"
+  }
+}
