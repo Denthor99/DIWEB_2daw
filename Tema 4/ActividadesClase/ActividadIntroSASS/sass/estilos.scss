@@ -2,9 +2,9 @@
 // Textos
 $color-texto_defecto: #222222;
 $cabecera-texto: #FFFFFF;
-$cabecera-fons: #000000;
+$cabecera-fondo: #000000;
 $footer-texto: #FFFFFF;
-$footer-fons: #3B3B3B;
+$footer-fondo: #3B3B3B;
 
 // Enlaces
 $enlace: #CC0000;
@@ -19,6 +19,16 @@ $navegacion-borde: #CC0000;
 $bordes: #DDDDDD;
 $fondo: #EEEEEE;
 
+// Funciones
+@mixin establecer-grid($columnas:12){
+    display: grid;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+@mixin grid-columnas($inicio:3,$fin:11){
+    grid-column-start: $inicio;
+    grid-column-end:$fin; 
+}
+
 
 // FUENTES A UTILIZAR
 // Importamos la fuente sin serifa a usar, junto a las correspondientes asignaciones de 
@@ -28,7 +38,9 @@ $fondo: #EEEEEE;
 $fuente-sanSerif: 'Lato',sans-serif;
 
 // Fuente con serifa
-//$fuente-serif
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$fuente-conSerif: 'Raleway',serif;
+
 
 // Modificamos los valores por defecto del body
 body{
@@ -38,22 +50,22 @@ body{
 }
 // Header
 .header{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    background-color: $cabecera-fons;
+    @include establecer-grid();
+    background-color: $cabecera-fondo;
     border-bottom: 2px $bordes;
 
     .header__imagen{
-        margin-top:4px;
-        grid-column: 3/11;
+        margin-top:8px;
+        @include grid-columnas();
     }
     .header__titulo{
-        grid-column: 3/11;
+        @include grid-columnas();
 
         h1{
             color: $cabecera-texto;
             font-family: $fuente-sanSerif;
             font-size: 3.5em;
+            margin-top: 0;
         }
     }
     
@@ -71,7 +83,7 @@ body{
     border-bottom: 2px solid $bordes;
     position: sticky;
     top:0;
-    background-color: $fondo;
+    background-color: $cabecera-texto;
     div {
         padding-left: 1em;
         padding-right: 1em;
@@ -92,13 +104,13 @@ body{
 
 // Main 
 .main{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
+    @include establecer-grid();
 
     .main__titulo{
-        grid-column: 3/11;
+        @include grid-columnas();
         p{
             font-weight: bold;
+            font-family: $fuente-conSerif;
         }
         a{
             text-decoration: none;
@@ -108,24 +120,26 @@ body{
         }
         h1{
             font-size: 3em;
+            font-family: $fuente-sanSerif;
         }
         
     }
     .main__parrafoIntroductorio{
-        grid-column: 3/11;
+        @include grid-columnas();
         border-top: 3px solid $bordes;
         border-bottom: 3px solid $bordes;
         margin-right: 3.5%;
         margin-left: 3.5%;
         p{
-            font-size: 1.9rem;
+            font-size: 1.8rem;
             text-align: justify;
             margin-right: 1%;
             margin-left: 1%;
+            font-family: $fuente-conSerif;
         }
     }
     .main__zonaImagen {
-        grid-column: 3/11;
+        @include grid-columnas();
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -149,9 +163,32 @@ body{
         }
     }
     .main__textoPrincipal{
-        grid-column: 3/11;
+        @include grid-columnas();
         p{
             text-align: justify;
+            font-family: $fuente-conSerif;
+            font-size: 1.3em;
+        }
+        h3{
+            font-size: 1.8em;
+            font-family: $fuente-sanSerif;
+            margin-bottom:0;
+        }
+        dl{
+            dt{
+                font-family: $fuente-sanSerif;
+                padding-bottom: 5px;
+                font-size: 1.8em;
+                font-weight: 550;
+                color: $color-texto_defecto;
+            }
+            dd{
+                font-family: $fuente-sanSerif;
+                padding-bottom: 15px;
+                color: $color-texto_defecto;
+                font-size: 1.2em;
+                margin:0;
+            }
         }
         .textoPrincipal__cita{
             display: flex;
@@ -159,9 +196,9 @@ body{
             align-content: center;
             margin-left: 10%;
             margin-right: 10%;
-            background-color: $bordes;
-            padding-bottom: 10px;
-            border-left: 4px solid $enlace_hover;
+            background-color: $fondo;
+            padding-bottom: 20px;
+            border-left: 5px solid $enlace_hover;
             p{
                 margin-left: 5%;
                 margin-right: 5%;
@@ -169,17 +206,26 @@ body{
             }
         }
     }
-    .main__zonaVideo{
-        grid-column: 4/10;
-        iframe{
-            text-align: center;
+    .main__zonaVideo {
+        @include grid-columnas(4, 10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        iframe {
+            // width: 100%;
+            // height: 100%; /* Esto hará que el iframe tome la altura disponible */
+            // max-height: 315px; /* Ajusta este valor según sea necesario */
+            // max-width: 560px; /* Ajusta este valor según sea necesario */
         }
-        p{
+    
+        p {
             text-align: center;
+            font-family: $fuente-sanSerif
         }
     }
     .main__zonaBiografia{
-        grid-column: 4/10;
+        @include grid-columnas(4,10);
         display: inline-flex;
         justify-content: center;
         align-items: flex-end;
@@ -187,68 +233,86 @@ body{
             border-radius: 50%;
         }
         p{
-            padding-left: 5px;
+            padding-left: 10px;
+            font-family: $fuente-conSerif;
+            font-size: 1.2em;
+            text-align: left;
+            font-weight: 600;
         }
     }
     .main__zonaBibliografia{
-        grid-column: 4/10;
+        @include grid-columnas(4,10);
         padding-top: 35px;
         padding-bottom: 35px;
         p{
             font-style: italic;
-        }
-        a{
-            text-decoration: none;
-            color:$enlace;
-        }
-    }
-    .main__listas{
-        grid-column: 3/11;
-        padding-bottom: 10px;
-        h1{
-            font-size: 3em;
-        }
-        img{
-            padding-right:3px;
-        }
-        p{
-            font-size: 1.5em;
-        }
-        a{
-            text-decoration: none;
-            color:$enlace;
-            //font-size: 1.1em;
-        }
-        ul{
-            list-style: square;
-        }
-        .listas__titulo{
-            list-style: none;
-            font-size: 1.2em;
-        }
-        .listas__p{
-            font-size: 1.1em;
-        }
-        .listas__p-cursivo{
-            font-size: 1.2em;
-            font-style: italic;
+            font-family: $fuente-conSerif;
+            font-weight:bold ;
             a{
                 text-decoration: none;
-                color: $enlace;
+                color:$enlace;
             }
         }
+        
     }
+    .main__listas{
+        @include grid-columnas();
+        padding-bottom: 30px;
+        h1{
+            font-size: 3em;
+            font-family: $fuente-sanSerif;
+        }
+        ol{
+            img{
+                padding-right:3px;
+            }
+            p{
+                font-size: 1.5em;
+                font-family: $fuente-sanSerif
+            }
+            a{
+                text-decoration: none;
+                color:$enlace;
+                //font-size: 1.1em;
+            }
+            ul{
+                list-style: square;
+            }
+            .listas__titulo{
+                list-style: none;
+                font-size: 1.2em;
+                font-family: $fuente-sanSerif;
+            }
+            .listas__p{
+                font-size: 1.1em;
+                font-family: $fuente-sanSerif;
+            }
+            .listas__p-cursivo{
+                font-size: 1.2em;
+                font-style: italic;
+                font-family: $fuente-sanSerif;
+                a{
+                    text-decoration: none;
+                    color: $enlace;
+                }
+            }
+        }
+        
+    }
+      
+      
+      
 }
 
 .footer{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    background-color: $footer-fons;
+    @include establecer-grid();
+    background-color: $footer-fondo;
     height: 15vh;
     .footer__zonaContenido{
-        grid-column: 3/11;
+        @include grid-columnas();
         img{
             padding-top: 15px;
+            
         }
         p{
             color:$footer-texto;
