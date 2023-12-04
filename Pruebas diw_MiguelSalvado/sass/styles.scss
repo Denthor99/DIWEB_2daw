@@ -1,0 +1,89 @@
+// variables
+$color-fondo-footer: #181818;
+$color-letras-footer: #EFEFEF;
+
+// Tipografía sin serifa
+@font-face {
+    font-family: 'Raleway';
+    src: url(/fonts/raleway/Raleway-ExtraLightItalic.ttf);
+}
+
+// Tipografía con serifa
+@font-face {
+    font-family: 'Fanwood';
+    src: url(/fonts/fanwood/FanwoodText-Regular.ttf);
+}
+
+// Valores del body reestablecido
+body{
+    margin: 0;
+    padding:0;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    .main__zonaTitulo{
+        grid-column: 2/4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        padding-left: 20px;
+        margin-right:10px;
+        background-color: $color-fondo-footer;
+        opacity: 65%;
+        h1{
+            font-family: 'Raleway',sans-serif;
+            font-style: italic;
+            color:$color-letras-footer;
+            text-align: center;
+        }
+    }
+    .main__menuHamburguer{
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        a{
+            font-weight: bold;
+        }
+    }
+    .main__menuDesplegable{
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        background-color:beige;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 25px;
+        .menuDesplegable__cerrar{
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 5px;
+        }
+        a{
+            background-color: $color-fondo-footer;
+            color: $color-letras-footer;
+            text-decoration: none;
+            font-family: 'Fanwood',serif;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.3em;
+            margin-left: 2px;
+            margin-bottom: 3px;
+            margin-right: 15px;
+        }
+    }
+}
+.footer{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-fondo-footer;
+    color:$color-letras-footer;
+    font-size: 1.08em;
+}
+

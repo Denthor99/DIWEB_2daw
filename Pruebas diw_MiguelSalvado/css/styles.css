@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(/fonts/raleway/Raleway-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: "Fanwood";
+  src: url(/fonts/fanwood/FanwoodText-Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.main .main__zonaTitulo {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 20px;
+  margin-right: 10px;
+  background-color: #181818;
+  opacity: 65%;
+}
+.main .main__zonaTitulo h1 {
+  font-family: "Raleway", sans-serif;
+  font-style: italic;
+  color: #EFEFEF;
+  text-align: center;
+}
+.main .main__menuHamburguer {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+}
+.main .main__menuHamburguer a {
+  font-weight: bold;
+}
+.main .main__menuDesplegable {
+  grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 25px;
+}
+.main .main__menuDesplegable .menuDesplegable__cerrar {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5px;
+}
+.main .main__menuDesplegable a {
+  background-color: #181818;
+  color: #EFEFEF;
+  text-decoration: none;
+  font-family: "Fanwood", serif;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.3em;
+  margin-left: 2px;
+  margin-bottom: 3px;
+  margin-right: 15px;
+}
+
+.footer {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #181818;
+  color: #EFEFEF;
+  font-size: 1.08em;
+}
+
+/*# sourceMappingURL=styles.css.map */
