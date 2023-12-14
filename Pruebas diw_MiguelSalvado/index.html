@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="body__zonaCarrusel">
+      <ul>
+        <li><img src="images/img1.jpg" alt="Imagen 1" /></li>
+        <li><img src="images/img2.jpg" alt="Imagen 2" /></li>
+        <li><img src="images/img3.jpg" alt="Imagen 3" /></li>
+        <li><img src="images/img4.jpg" alt="Imagen 4" /></li>
+        <li><img src="images/img5.jpg" alt="Imagen 5" /></li>
+        <li><img src="images/img1.jpg" alt="Imagen 1" /></li>
+      </ul>
+    </div>
     <main class="main">
-        <div class="main__zonaTitulo">
-            <h1>Miguel Salvado</h1>
-        </div>
-        <div class="main__nav">
-            <nav class="nav__menuHamburguer" id="clickDesplegarMenu">
-                <span class="menuHamburguer__span"></span>
-                <span class="menuHamburguer__span"></span>
-                <span class="menuHamburguer__span"></span>
-            </nav>
-        </div>
-        
-        <nav class="main__menuDesplegable" id="menuDesplegable" style="display: none;">
-            <div class="menuDesplegable__cerrar" id="clickCerrarMenu">X</div>
-            <a href="sobreMi.html">Sobre Mi</a>
-            <a href="proyectos.html">Proyectos</a>
-            <a href="premios.html">Premios</a>
-            <a href="contacto.html">Contacto</a>
+      <div class="main__zonaTitulo">
+        <h1>Miguel Salvado</h1>
+      </div>
+      <div class="main__nav">
+        <nav class="nav__menuHamburguer" id="clickDesplegarMenu">
+          <span class="menuHamburguer__span"></span>
+          <span class="menuHamburguer__span"></span>
+          <span class="menuHamburguer__span"></span>
         </nav>
+      </div>
+
+      <nav
+        class="main__menuDesplegable"
+        id="menuDesplegable"
+        style="display: none"
+      >
+        <div class="menuDesplegable__cerrar" id="clickCerrarMenu">X</div>
+        <a href="sobreMi.html">Sobre Mi</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="premios.html">Premios</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </main>
-   
+
     <footer class="footer">
-        <p>Copyright &copy; 2023 | Miguel Salvado | Todos los derechos reservados </p>
+      <p>
+        Copyright &copy; 2023 | Miguel Salvado | Todos los derechos reservados
+      </p>
     </footer>
     <script>
-        function ocultarMenu() {
- var menuDesplegable = document.getElementById('menuDesplegable');
- var ocultarSpans = document.getElementById('clickDesplegarMenu');
- 
- if (menuDesplegable.style.display !== 'none') {
-     menuDesplegable.style.display = 'none';
-     ocultarSpans.style.display = 'flex';
- }
-}
+      function ocultarMenu() {
+        var menuDesplegable = document.getElementById("menuDesplegable");
+        var ocultarSpans = document.getElementById("clickDesplegarMenu");
 
+        if (menuDesplegable.style.display !== "none") {
+          menuDesplegable.style.display = "none";
+          ocultarSpans.style.display = "flex";
+        }
+      }
 
-function desplegarMenu() {
- var menuDesplegable = document.getElementById('menuDesplegable');
- var ocultarSpans = document.getElementById('clickDesplegarMenu');
- 
- if (menuDesplegable.style.display === 'none') {
-     menuDesplegable.style.display = 'block';
-     ocultarSpans.style.display = 'none';
- }
-}
+      function desplegarMenu() {
+        var menuDesplegable = document.getElementById("menuDesplegable");
+        var ocultarSpans = document.getElementById("clickDesplegarMenu");
 
-document.getElementById('clickDesplegarMenu').addEventListener('click', desplegarMenu);
-document.getElementById('clickCerrarMenu').addEventListener('click', ocultarMenu);
+        if (menuDesplegable.style.display === "none") {
+          menuDesplegable.style.display = "block";
+          ocultarSpans.style.display = "none";
+        }
+      }
+
+      document
+        .getElementById("clickDesplegarMenu")
+        .addEventListener("click", desplegarMenu);
+      document
+        .getElementById("clickCerrarMenu")
+        .addEventListener("click", ocultarMenu);
     </script>
-</body>
+  </body>
 </html>
