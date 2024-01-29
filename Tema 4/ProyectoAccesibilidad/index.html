@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla Resumen - Requisitos de Accesibilidad</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__img">
+            <img
+          src="imagen_header.png"
+          alt="Página web del apartado Resumen de los requisitos de accesibiliad, del organimos W3C - WCAG 2.1"
+        />
+        </div>
+        <div class="header__h2">
+            <h2>Resumen de los requisitos de Accesibilidad (WCAG 2.1)</h2>
+        </div>  
+    </header>
+    <main class="main">
+      <table border="1px solid black">
+        <caption>
+          Requisitos de Accesibilidad
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Perceptible</th>
+                <th scope="col">Operable</th>
+                <th scope="col">Comprensible</th>
+                <th scope="col">Robusto</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>título1</th>
+            <th>título2</th>
+            <th>título3</th>
+          </tr>
+          <tr>
+            <td id="nested">
+              <table id="tabla2">
+                <tr>
+                  <td>celda1</td>
+                  <td>celda2</td>
+                  <td>celda3</td>
+                </tr>
+              </table>
+            </td>
+            <td>celda2</td>
+            <td>celda3</td>
+          </tr>
+          <tr>
+            <td>celda4</td>
+            <td>celda5</td>
+            <td>celda6</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+    </main>
+    <footer class="footer">
+      <h3 align="center">Daniel Alfonso Rodríguez Santos</h3>
+    </footer>
+  </body>
+</html>
