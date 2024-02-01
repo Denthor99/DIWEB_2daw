@@ -8,6 +8,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   color: white;
   background-color: #003f7a;
+  margin-bottom: 15px;
 }
 .header .header__img {
   display: flex;
@@ -29,6 +30,48 @@ body {
 .header .header__h2 h2 {
   font-size: 2em;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main table caption {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 2em;
+}
+.main table thead {
+  background-color: #003f7a;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main table tbody {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #DBDBDB;
+  color: #212121;
+}
+.main table tbody td {
+  font-size: 1.1em;
+}
+.main table tfoot {
+  font-weight: bold;
+  background-color: #DBDBDB;
+  color: #212121;
+}
+.main table tfoot a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  background-color: #003f7a;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
