@@ -19,48 +19,227 @@
         </div>  
     </header>
     <main class="main">
-      <table border="1px solid black">
-        <caption>
-          Requisitos de Accesibilidad
-        </caption>
+      <table border="1" role="table">
+        <caption>Principios y pautas (WCAG 2.1)</caption>
         <thead>
             <tr>
-                <th scope="col">Perceptible</th>
-                <th scope="col">Operable</th>
-                <th scope="col">Comprensible</th>
-                <th scope="col">Robusto</th>
+                <th scope="col">Principios</th>
+                <th scope="col">Pautas</th>
+                <th scope="col">Criterios de conformidad</th>
+                <th scope="col">Técnicas Suficientes/recomendables</th>
             </tr>
         </thead>
         <tbody>
           <tr>
-            <th>título1</th>
-            <th>título2</th>
-            <th>título3</th>
+              <th>Perceptible</th>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td>1.1: Proporcionar alternativas textuales</td>
+                      </tr>
+                      <tr>
+                          <td>1.2: Proporcionar alternativas para los medios tempodependientes</td>
+                      </tr>
+                      <tr>
+                          <td>1.3: Crear contenido que pueda presentarse de diversas formas, manteniendo la estructura</td>
+                      </tr>
+                      <tr>
+                          <td>1.4: Facilitar a los usuarios el consumo del contenido, tanto visual como auditivamente</td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <th>1.1.1 Contenido no textual</th>
+                          <td>Nivel A &#x27A1; Todo contenido no textual que se presenta al usuario debe tener una alternativa textual
+                          </td>
+                      </tr>
+                      <tr>
+                          <th>1.2.4 Subtitulos en directo</th>
+                          <td>Nivel AA &#x27A1; Se proporcionarán subtitulos para todo el contenido de audio en directo</td>
+                      </tr>
+                      <tr>
+                          <th>1.3.3 Características sensoriales</th>
+                          <td>Nivel A &#x27A1; Las instrucciones necesarias para entender y operar el contenido no deberán depender solo de la características sensoriales de los componentes como su forma, tamaño, ubicación vistual, orientación o sonido</td>
+                      </tr>
+                      <tr>
+                          <th>1.4.4 Cambio de tamaño del texto</th>
+                          <td>Nivel AA &#x27A1; Todo el texto puede ser ajustado sin ayudas técnicas hasta un 200 por cierto, no perdiendo su funcionalidad ni contenido</td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td><b>1.1.1</b> &#x27A1; Proporcionar altenativas de texto para emojis, emoticonos, arte ASCII y leetspeak</td>
+                      </tr>
+                      <tr>
+                          <td><b>1.2.4</b> &#x27A1; Crear subtítulos para medios sincronizados en vivo y mantenerlos siempre visibles</td>
+                      </tr>
+                      <tr>
+                          <td><b>1.3.3</b> &#x27A1; Proporcionar identificación textual de elementos que, de otro modo, dependen únicamente de información sensorial para ser comprendidos.'</td>
+                      </tr>
+                      <tr>
+                          <td><b>1.4.4</b> &#x27A1; Proporcionar controles en la página web que permitan a los usuarios cambiar incrementalmente el tamaño de todo el texto de la página hasta un 200 por ciento.</td>
+                      </tr>
+                  </table>
+              </td>
           </tr>
           <tr>
-            <td id="nested">
-              <table id="tabla2">
-                <tr>
-                  <td>celda1</td>
-                  <td>celda2</td>
-                  <td>celda3</td>
-                </tr>
-              </table>
+              <th>Operable</th>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td>2.1: Proporcionar acceso a toda la funcionalidad mediante el teclado</td>
+                      </tr>
+                      <tr>
+                          <td>2.2: Proporcionar a los usuarios el tiempo suficiente para leer y usar contenido</td>
+                      </tr>
+                      <tr>
+                          <td>2.3: Evitar diseñar contenido que pueda generar ataques, espasmos o convulsiones </td>
+                      </tr>
+                      <tr>
+                          <td>2.4: Proporcionar medios par ayudar a los usuarios a navegar y encontrarse en la web
+                          </td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <th>2.1.1 Teclado</th>
+                          <td>Nivel A &#x27A1; Toda la funcionalidad del contenido se puede operar a tráves de una interfaz de teclado, sin requerir una velocidad determinada para cada pulsación individual de las teclas, exceptuando los casos en los que se requiera una entrada que dependa de los movimientos del usuario</td>
+                      </tr>
+                      <tr>
+                          <th>2.2.3 Sin tiempo</th>
+                          <td>Nivel AAA &#x27A1; El tiempo no es importante a la hora de presentar el contenido, exceptuando los medios multimedia sincronizados no interactivos y los eventos en tiempo real</td>
+                      </tr>
+                      <tr>
+                        <th>2.3.2 Tres destellos</th>
+                        <td>Nivel AAA &#x27A1; Las páginas web no deberán contener elementos que destellen más de tres veces por segundo</td>
+                      </tr>
+                      <tr>
+                        <th>2.4.5 Múltiples vias</th>
+                        <td>Nivel AA &#x27A1; Se proporcionará más de un camino para localizar una página web dentro de un cojunto de páginas web, exceptuando cuando dicha página forme parte de un proceso</td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td><b>2.1.1</b> &#x27A1; Usar fomularios HTML y enlaces</td>
+                      </tr>
+                      <tr>
+                          <td><b>2.2.3</b> &#x27A1; Permitir a los usuarios completar una actividad sin tener un límite de tiempo</td>
+                      </tr>
+                      <tr>
+                          <td><b>2.3.2</b> &#x27A1; Garantizar que ningún componente del contenido parpadee más de tres veces en un período de 1 segundo.</td>
+                      </tr>
+                      <tr>
+                          <td><b>2.4.5</b> &#x27A1; Preever a los usuarios un mapa del sitio web</td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+          <tr>
+              <th>Comprensible</th>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td>3.1: Hacer que los contenidos textuales resulten legibles y comprensibles</td>
+                      </tr>
+                      <tr>
+                          <td>3.2: Hacer que las páginas web aparezcan y operen de manera pedecible</td>
+                      </tr>
+                      <tr>
+                          <td>3.3 - Ayudar a los usuarios a evitar y corregir los errores</td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <th>3.1.3 Palabras inusuales</th>
+                          <td>Nivel A &#x27A1; Se proporcionan mecanismos para identificar las definiciones específicas de
+                              palabras o frases </td>
+                      </tr>
+                      <tr>
+                          <th>3.2.3 Navegación coherente</th>
+                          <td>Nivel AA &#x27A1; Los mecanismos de navegación se deberán mantener casi identicos en múltiples páginas web, apareciendo siempre en un mismo orden cada vez que se repiten, a menos que existan cambios ocasionados por el propio usuario</td>
+                      </tr>
+                      <tr>
+                          <th>3.3.3 Sugerencias ante errores</th>
+                          <td>Nivel AA &#x27A1; Si existen un error a la hora de introducir datos, se presentarán sugerencias al usuario para realizar su corrección, al menos que esto suponga un riesgo para la seguridad</td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td><b>3.1.3</b> &#x27A1; Proveer una función que busque una palabra en un diccionario online, devolviendo su definición</td>
+                      </tr>
+                      <tr>
+                          <td><b>3.2.3</b> &#x27A1; Presentar componentes de forma repetida en el mismo orden cada vez que aparecen
+                      </tr>
+                      <tr>
+                          <td><b>3.3.3</b> &#x27A1; Identificar un campo requerido con la propiedad "aria-required"</td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+          <tr>
+              <th>Robusto</th>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td>
+                              4.1: Maximizar la compatibilidad con las aplicaciones de usuarios actuales y futuras
+                          </td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <th>4.1.1 Procesamiento</th>
+                          <td>Nivel A &#x27A1; En los contenidos implementados mediante el uso de lenguajes de marcas, los
+                              elementos tienen las etiquetas de apertura y cierre completas; los elementos están
+                              anidados de acuerdo a sus especificaciones; los elementos no contienen atributos
+                              duplicados y los ID son únicos </td>
+                      </tr>
+                      <tr>
+                          <th>4.1.2 Nombre, función, valor</th>
+                          <td>Nivel A &#x27A1; Para todos los componentes de la interfaz de usuario (incluyendo pero no limitado
+                              a: elementos de formulario, enlaces y componentes generados por scripts), el nombre y la
+                              función pueden ser determinados por software; los estados, propiedades y valores que
+                              pueden ser asignados por el usuario pueden ser especificados por software</td>
+                      </tr>
+                  </table>
+              </td>
+              <td>
+                  <table role="table">
+                      <tr>
+                          <td><b>4.1.1</b> &#x27A1; Asegurar que las etiquetas de abre y cierre se usan acorde las especificaciones, y asegurar que los atributos "id" son unicos en el sitio web </td>
+                      </tr>
+                      <tr>
+                          <td><b>4.1.2</b> &#x27A1; Usar aria-labelledby para proveer un nombre para los controles de interfaz de usuario</td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+      </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4" style="text-align: center;">
+              Copyright © 2023 W3C ® (<a href="https://www.csail.mit.edu/" aria-labelledby="Enlace hacía la página de investigacion del instituo tecnologico MIT" title="MIT">MIT</a>, <a href="https://www.ercim.eu/" aria-describedby="Página web del Consorcio Europeo de Investigación para informáticos y matematicos" title="ERCIM">ERCIM</a>, <a href="https://www.keio.ac.jp/en/" aria-describedby="Página Web de la Universidad de Keio, Japón" title="Universidad de Keio, Japón">Keio</a>, <a href="https://ev.buaa.edu.cn/" aria-describedby="Página web de la universidad china de  Beihang" title="Universidad Beihang (sin acceso desde el extranjero xD)">Beihang</a>) Usage policies apply.
             </td>
-            <td>celda2</td>
-            <td>celda3</td>
           </tr>
-          <tr>
-            <td>celda4</td>
-            <td>celda5</td>
-            <td>celda6</td>
-          </tr>
-        </tbody>
-        <tfoot></tfoot>
+        </tfoot>
       </table>
     </main>
     <footer class="footer">
-      <h3 align="center">Daniel Alfonso Rodríguez Santos</h3>
+      <h3>Daniel Alfonso Rodríguez Santos | DIWEB | 2023/2024</h3>
     </footer>
   </body>
 </html>

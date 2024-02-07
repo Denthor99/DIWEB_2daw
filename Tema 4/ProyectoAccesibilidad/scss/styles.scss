@@ -1,9 +1,6 @@
-// Colores del header
-$color_background_header:#003f7a;
-$color_font_header:#ffff;
-
-// Colores del footer
-
+// Colores del header (Respetan las reglas de accesibilidad al tener un conntraste de 10.54:1)
+$color_background:#003f7a;
+$color_font:#ffff;
 
 // Reestablecemos los valores del body a cero
 body{
@@ -13,8 +10,9 @@ body{
 .header{
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    color:$color_font_header;
-    background-color: $color_background_header;
+    color:$color_font;
+    background-color: $color_background;
+    margin-bottom: 15px;
     .header__img{
         display: flex;
         grid-column: 2/4;
@@ -39,9 +37,46 @@ body{
 }
 
 .main{
-
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        caption{
+            margin: 10px;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        thead{
+            background-color: $color_background;
+            color: $color_font;
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        tbody{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color:#DBDBDB;
+            color: #212121;
+            td{
+                font-size: 1.1em;
+            }
+        }
+        tfoot{
+            font-weight: bold;
+            background-color:#DBDBDB;
+            color: #212121;
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+    
 }
 
 .footer{
-
+    display: flex;
+    color:$color_font;
+    background-color: $color_background;
+    align-items: center;
+    justify-content: center;
 }
