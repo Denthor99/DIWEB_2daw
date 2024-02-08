@@ -23,36 +23,47 @@
     </header>
     <main class="main">
         <div class="main__zonaImagen">
-            <img src="images/imagenFormulario.png" alt="">
+            <img src="images/imagenFormulario.png" alt="Imagen de una chica con cascos de Realidad Virtual">
         </div>
-        <form class="main__formularioContacto" method="post" role="form" aria-label="Formulario de contacto">
-            <div role="region">
-                <p tabindex="0">Estamos encantados de que estés interesado en el mundo de la realidad virtual y aumentada. Por favor, 
-                    déjanos tus detalles y cualquier pregunta o comentario que tengas, ¡y estaremos encantados de responderte!</p>
-            </div>
-            <div role="region" class="formularioContacto__campos">
-                <label for="input__nombre" id="label__nombre" aria-label="input__nombre">Nombre</label>
-                <input class="input__text" type="text" name="input__nombre" id="input__nombre" aria-labelledby="label__nombre" required aria-required="true" placeholder="Escriba aquí su nombre">
-            </div>
-            <div role="region" class="formularioContacto__campos">
-                <label for="input__apellidos" id="label__apellidos" aria-label="input__apellidos">Apellidos</label>
-                <input class="input__text" type="text" name="input__apellidos" id="input__apellidos" aria-labelledby="label__apellidos" required aria-required="true" placeholder="Escriba aquí sus apellidos">
-            </div>
-            <div role="region" class="formularioContacto__campos">
-                <label for="input__email" id="label__email" aria-label="input__email">Correo electrónico (email)</label>
-                <input class="input__text" type="email" name="input__email" id="input__email" aria-labelledby="label__email" required aria-required="true" placeholder="Escriba aquí su email">
-            </div>
-            <div class="formularioContacto__campos">
-                <label for="input_consulta" id="label__consulta">Escriba aquí su consulta</label>
-                <textarea name="input_consulta" id="input_consulta" aria-labelledby="label__consulta" required aria-required="true" placeholder="Ingrese su consulta aquí" cols="30" rows="10"></textarea>
-            </div>
-            <div class="formularioContacto__botones" role="region">
-                <button class="button__normal button__normal--send" role="button" type="submit">Enviar</button>
-                <button class="button__normal button__normal--send" role="button" type="reset">Borrar</button>
-            </div>
-        </form>
+        <div class="main__zonaForm">
+            <form class="main__formularioContacto" method="post" role="form" aria-label="Formulario de contacto">
+                <div role="region" class="formularioContacto__p">
+                    <p tabindex="0">Estamos encantados de que estés interesado en el mundo de la realidad virtual y aumentada. Por favor, 
+                        déjanos tus detalles y cualquier pregunta o comentario que tengas, ¡y estaremos encantados de responderte!</p>
+                </div>
+                <div role="region" class="formularioContacto__campos">
+                    <label for="input__nombre" id="label__nombre" aria-label="input__nombre">Nombre</label>
+                    <input class="input__text" type="text" name="input__nombre" id="input__nombre" aria-labelledby="label__nombre" required aria-required="true" placeholder="Escriba aquí su nombre">
+                </div>
+                <div role="region" class="formularioContacto__campos">
+                    <label for="input__apellidos" id="label__apellidos" aria-label="input__apellidos">Apellidos</label>
+                    <input class="input__text" type="text" name="input__apellidos" id="input__apellidos" aria-labelledby="label__apellidos" required aria-required="true" placeholder="Escriba aquí sus apellidos">
+                </div>
+                <div role="region" class="formularioContacto__campos">
+                    <label for="input__email" id="label__email" aria-label="input__email">Correo electrónico (email)</label>
+                    <input class="input__text" type="email" name="input__email" id="input__email" aria-labelledby="label__email" required aria-required="true" placeholder="Escriba aquí su email">
+                </div>
+                <div class="formularioContacto__campos">
+                    <label for="input_consulta" id="label__consulta">Escriba aquí su consulta</label>
+                    <textarea name="input_consulta" id="input_consulta" aria-labelledby="label__consulta" required aria-required="true" placeholder="Ingrese su consulta aquí" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formularioContacto__botones" role="region">
+                    <button class="botones__boton" role="button" type="submit">Enviar</button>
+                    <button class="botones__boton" role="button" type="reset">Borrar</button>
+                </div>
+            </form>
+        </div>    
     </main>
-    <footer>
+    <footer class="footer">
+        <div class="footer__infoLegal">
+            <p>&copy; VirtualPriority Todo los derechos reservados</p>
+        </div>
+        <div class="footer__rrss">
+            <a href="https://www.twitter.com"><img src="images/logoX.png" alt="Twitter/X" srcset=""></a>
+            <a href="https://www.facebook.com"><img src="images/logoFacebook.png" alt="Facebook" srcset=""></a>
+            <a href="https://www.youtube.com"><img src="images/logoYT.png" alt="YouTube" srcset=""></a>
+            <a href="https://www.instagram.com"><img src="images/logoInsta.png" alt="Instagram" srcset=""></a>
+        </div>
         
     </footer>
 </body>

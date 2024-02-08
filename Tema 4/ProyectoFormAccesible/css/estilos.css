@@ -11,14 +11,20 @@ body {
   font-family: "Urbanist";
   src: url("../fonts/Urbanist/Urbanist-VariableFont_wght.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Ubuntu-regular";
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
 .header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.47) 121.53%);
+  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
   height: 15vh;
   align-items: center;
-  z-index: 1;
-  overflow-x: hidden;
 }
 .header .header__zonaLogo {
   grid-column: 2/4;
@@ -46,16 +52,87 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   background-color: #F2F2F2;
   height: 85vh;
 }
 .main .main__zonaImagen {
   grid-column: 1/3;
   display: flex;
+  align-items: center;
 }
-.main .main__formularioContacto {
-  grid-column: 3/5;
+.main .main__zonaImagen img {
+  max-width: 100%;
+  height: auto;
+}
+.main .main__zonaForm {
+  grid-column: 4/8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .main__zonaForm .formularioContacto__p {
+  font-family: "Ubuntu-regular";
+  font-size: 24pt;
+  margin-bottom: 10px;
+}
+.main .main__zonaForm .formularioContacto__campos {
+  margin-bottom: 20px;
+}
+.main .main__zonaForm .formularioContacto__campos label {
+  display: block;
+  margin-bottom: 5px;
+}
+.main .main__zonaForm .formularioContacto__campos input[type=text],
+.main .main__zonaForm .formularioContacto__campos input[type=email],
+.main .main__zonaForm .formularioContacto__campos textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.main .main__zonaForm .formularioContacto__campos input[type=text]:focus,
+.main .main__zonaForm .formularioContacto__campos input[type=email]:focus,
+.main .main__zonaForm .formularioContacto__campos textarea:focus {
+  outline: none;
+  border-color: rgba(0, 189, 249, 0.8);
+}
+.main .main__zonaForm .formularioContacto__campos textarea {
+  resize: none;
+  min-height: 100px;
+}
+.main .main__zonaForm .formularioContacto__botones button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgba(0, 189, 249, 0.8);
+  color: #FFFFFF;
+}
+.main .main__zonaForm .formularioContacto__botones button:hover {
+  background-color: rgba(0, 150, 198, 0.8);
+}
+.main .main__zonaForm .formularioContacto__botones button:focus {
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
+  height: 8vh;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .footer__infoLegal {
+  font-family: "Urbanist";
+  font-weight: bold;
+}
+.footer .footer__rrss img {
+  max-height: 25px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

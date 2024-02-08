@@ -1,10 +1,10 @@
 // Reestablecemos los valores del body
-body{
-    margin:0;
+body {
+    margin: 0;
     padding: 0;
 }
 
-// Creamos las variables  que vamos a utilizar en el proyecto
+// Creamos las variables que vamos a utilizar en el proyecto
 
 // Colores header
 $color1-header: #F2F2F2;
@@ -13,9 +13,9 @@ $color-header--font: #000000;
 
 // Colores main 
 $color-main--fondo_bg: #F2F2F2;
-$color-main__form--fondo:rgba(0,189,249);
-$color-main__form--text1:#000000;
-$color-main__form--text2:#FFFFFF;
+$color-main__form--fondo: rgba(0,189,249, 0.8);
+$color-main__form--text1: #000000;
+$color-main__form--text2: #FFFFFF;
 
 // Tipografias
 // OpenDyslexic
@@ -29,28 +29,38 @@ $color-main__form--text2:#FFFFFF;
     src: url('../fonts/Urbanist/Urbanist-VariableFont_wght.ttf') format('truetype');
 }
 
-.header{
+// Ubuntu-regular
+@font-face {
+    font-family: 'Ubuntu-regular';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+// Ubuntu-bold
+@font-face {
+    font-family: 'Ubuntu-bold';
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+.header {
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    background: linear-gradient(90deg, $color1-header 0%, rgba($color2-header,0.47) 121.53%);
+    background: linear-gradient(90deg, $color1-header 0%, rgba($color2-header,0.62) 121.53%);
     height: 15vh;
     align-items: center;
-    z-index: 1;
-    overflow-x: hidden;
-    .header__zonaLogo{
+    .header__zonaLogo {
         grid-column: 2/4;
-        img{
+        img {
             max-height: 125px;
             width: auto;
         }
     }
-    .header__zonaNavegacion{
+    .header__zonaNavegacion {
         grid-column: 6/12;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        a{
+        a {
             font-family: 'Urbanist';
             font-style: normal;
             font-weight: 600;
@@ -62,17 +72,90 @@ $color-main__form--text2:#FFFFFF;
     }
 }
 
-.main{
+.main {
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(8, 1fr);
     background-color: $color-main--fondo_bg;
-    height:  calc(100vh - 15vh);
-    .main__zonaImagen{
+    height: calc(100vh - 15vh);
+    .main__zonaImagen {
         grid-column: 1/3;
         display: flex;
+        align-items: center;
+        img {
+            max-width: 100%; // Ajustamos la imagen al ancho del contenedor
+            height: auto; // Permitimos que la altura se ajuste automáticamente
+        }
     }
-    .main__formularioContacto{
-        grid-column: 3/5;
+    .main__zonaForm {
+        grid-column: 4/8; // Modificamos el rango de columnas para el formulario
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .formularioContacto__p {
+            font-family: 'Ubuntu-regular';
+            font-size: 24pt;
+            margin-bottom: 10px;
+        }
+        .formularioContacto__campos {
+            margin-bottom: 20px;
+            label {
+                display: block;
+                margin-bottom: 5px;
+            }
+            input[type='text'],
+            input[type='email'],
+            textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                &:focus {
+                    outline: none;
+                    border-color: $color-main__form--fondo;
+                }
+            }
+            textarea {
+                resize: none;
+                min-height: 100px;
+            }
+        }
+        .formularioContacto__botones {
+            button {
+                padding: 10px 20px;
+                margin-right: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 18px;
+                background-color: $color-main__form--fondo;
+                color: $color-main__form--text2;
+                &:hover {
+                    background-color: darken($color-main__form--fondo, 10%);
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
     }
-    
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, $color1-header 0%, rgba($color2-header,0.62) 121.53%);
+    height: 8vh;
+    align-items: center;
+    justify-content: space-around;
+    .footer__infoLegal {
+        font-family: 'Urbanist';
+        font-weight: bold;
+    }
+    .footer__rrss {
+        img {
+            max-height: 25px;
+        }
+    }
 }
