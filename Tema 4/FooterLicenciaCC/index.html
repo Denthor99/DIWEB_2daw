@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto/consulta de VirtualPriority">
+    <title>VirtualPriority - Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/formAccesible.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__zonaLogo" role="banner">
+            <img src="images/logo.png" alt="Logotipo de VirtualPriority, Sitio Web orientado al mundo de la realidad virtual">
+        </div>
+        <nav class="header__zonaNavegacion" role="navigation">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre AR/VR</a>
+            <a href="#">Tienda</a>
+            <a href="#">Software</a>
+            <a href="index.html" >Contacto</a>
+            <a href="#" id="opcionDislexia"><img src="images/accessibility 1.png" alt="Opción de accesibilidad (dislexia)"></a>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__zonaImagen">
+            <img src="images/imagenFormulario.png" alt="Imagen de una chica con cascos de Realidad Virtual">
+        </div>
+        <div class="main__zonaForm">
+            <div role="region" class="main__zonaForm--saludos">
+                <p tabindex="0">Estamos encantados de que estés interesado en el mundo de la realidad virtual y aumentada. Por favor, 
+                    déjanos tus detalles y cualquier pregunta o comentario que tengas, ¡y estaremos encantados de responderte!</p>
+            </div>
+            <form class="main__formularioContacto" method="post" role="form" aria-label="Formulario de contacto">
+                <div class="formularioContacto__Container">
+                    <div role="region" class="formularioContacto__campos">
+                        <label for="input__nombre" id="label__nombre" aria-label="input__nombre">Nombre</label>
+                        <input class="input__text" type="text" name="input__nombre" id="input__nombre" aria-labelledby="label__nombre" required aria-required="true" placeholder="Escriba aquí su nombre">
+                    </div>
+                    <div role="region" class="formularioContacto__campos">
+                        <label for="input__apellidos" id="label__apellidos" aria-label="input__apellidos">Apellidos</label>
+                        <input class="input__text" type="text" name="input__apellidos" id="input__apellidos" aria-labelledby="label__apellidos" required aria-required="true" placeholder="Escriba aquí sus apellidos">
+                    </div>
+                    <div role="region" class="formularioContacto__campos">
+                        <label for="input__email" id="label__email" aria-label="input__email">Correo electrónico (email)</label>
+                        <input class="input__text" type="email" name="input__email" id="input__email" aria-labelledby="label__email" required aria-required="true" placeholder="Escriba aquí su email">
+                    </div>
+                    <div class="formularioContacto__campos">
+                        <label for="input_consulta" id="label__consulta">Escriba aquí su consulta</label>
+                        <textarea name="input_consulta" id="input_consulta" aria-labelledby="label__consulta" required aria-required="true" placeholder="Ingrese su consulta aquí" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="formularioContacto__botones" role="region">
+                        <button class="botones__boton botones__boton--send" role="button" type="submit" aria-label="Enviar consulta">Enviar</button>
+                        <button class="botones__boton botones__boton--reset" role="button" type="reset" aria-label="Reestablecer consulta">Borrar</button>
+                    </div>
+                </div>
+            </form>
+        </div>    
+    </main>
+    <footer class="footer">
+        <div class="footer__infoLegal">
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">VirtualPriority</span> by <span property="cc:attributionName">Daniel Alfonso Rodríguez Santos</span> is licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="Creditos al autor"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt="No se permiten modificaciones o adaptaciones de la obra"></a></p>
+        </div>
+        <div class="footer__rrss">
+            <a href="https://www.twitter.com"><img src="images/logoX.png" alt="Twitter/X" srcset=""></a>
+            <a href="https://www.facebook.com"><img src="images/logoFacebook.png" alt="Facebook" srcset=""></a>
+            <a href="https://www.youtube.com"><img src="images/logoYT.png" alt="YouTube" srcset=""></a>
+            <a href="https://www.instagram.com"><img src="images/logoInsta.png" alt="Instagram" srcset=""></a>
+        </div>
+        
+    </footer>
+</body>
+</html>

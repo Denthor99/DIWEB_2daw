@@ -1,0 +1,46 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
+  height: 8vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+}
+.footer__infoLegal {
+  font-family: "Urbanist";
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer__infoGeneral {
+  display: flex;
+  align-items: center;
+}
+.footer__infoGeneral a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Urbanist";
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer__infoGeneral a:hover {
+  text-decoration: underline;
+}
+.footer__rrss {
+  display: flex;
+  align-items: center;
+}
+.footer__rrss a {
+  margin-left: 20px;
+}
+.footer__rrss img {
+  max-height: 25px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

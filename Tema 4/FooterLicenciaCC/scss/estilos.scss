@@ -1,0 +1,194 @@
+// Reestablecemos los valores del body
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Creamos las variables que vamos a utilizar en el proyecto
+
+// Colores header
+$color1-header: #F2F2F2;
+$color2-header: #1ABDF0;
+$color-header--font: #000000;
+
+// Colores main 
+$color-main--fondo_bg: #F2F2F2;
+$color-main__form--fondo: rgba(0,189,249, 0.8);
+$color-main__form--text1: #000000;
+$color-main__form--text2: #FFFFFF;
+$color-main__formButton--send:#194852;
+$color-main__formButton--reset:#A32929;
+
+// Tipografias
+// OpenDyslexic
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic/OpenDyslexic-Regular.otf') format('truetype');
+}
+// Urbanist
+@font-face {
+    font-family: 'Urbanist';
+    src: url('../fonts/Urbanist/Urbanist-VariableFont_wght.ttf') format('truetype');
+}
+
+// Ubuntu-regular
+@font-face {
+    font-family: 'Ubuntu-regular';
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+// Ubuntu-bold
+@font-face {
+    font-family: 'Ubuntu-bold';
+    src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background: linear-gradient(90deg, $color1-header 0%, rgba($color2-header,0.62) 121.53%);
+    height: 15vh;
+    align-items: center;
+    .header__zonaLogo {
+        grid-column: 2/4;
+        img {
+            max-height: 125px;
+            width: auto;
+        }
+    }
+    .header__zonaNavegacion {
+        grid-column: 6/12;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        a {
+            font-family: 'Urbanist';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+            color: $color-header--font;
+            text-decoration: none;
+        }
+    }
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: $color-main--fondo_bg;
+    height: auto;
+    .main__zonaImagen {
+        grid-column: 1/4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        img {
+            width: 100%; // Ajustamos la imagen al ancho del contenedor
+            height: 100vh; // Permitimos que la altura se ajuste automáticamente
+            object-fit: cover;
+        }
+    }
+    .main__zonaForm {
+        grid-column: 5/8; // Modificamos el rango de columnas para el formulario
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .main__zonaForm--saludos {
+            font-family: 'Ubuntu-regular';
+            font-size: 22pt;
+            // text-align: justify;
+            margin-bottom: 10px;
+            margin-top: -20px;
+        }
+        .formularioContacto__campos {
+            margin-bottom: 20px;
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-family: 'Ubuntu-bold';
+                font-size: 22pt;
+            }
+            input[type='text'],
+            input[type='email'],
+            textarea {
+                width: 90%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                &:focus {
+                    outline: none;
+                    border-color: $color-main__form--fondo;
+                }
+            }
+            textarea {
+                resize: none;
+                max-height: 100px;
+            }
+        }
+        .formularioContacto__botones {
+            .botones__boton {
+                padding: 10px 20px;
+                margin-right: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 18px;
+                color: $color-main__form--text2;
+                &:hover {
+                    background-color: darken($color-main__form--fondo, 10%);
+                }
+                &:focus {
+                    outline: none;
+                }
+
+            }
+            .botones__boton--send{
+                background-color: $color-main__formButton--send;
+            }
+            .botones__boton--reset{
+                background-color: $color-main__formButton--reset;
+            }
+        }
+        .formularioContacto__Container{
+            background-color: #55b1ee; /* Color de fondo azul */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+    }
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
+    height: 8vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; // Añadimos espaciado interno
+
+    &__infoLegal {
+        font-family: 'Urbanist';
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &__rrss {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 20px;
+        }
+
+        img {
+            max-height: 25px;
+        }
+    }
+}
+
+
