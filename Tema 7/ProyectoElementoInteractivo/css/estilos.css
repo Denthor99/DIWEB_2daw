@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("../fonts/OpenDyslexic/OpenDyslexic-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist/Urbanist-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Ubuntu-regular";
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url("../fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
+  height: 15vh;
+  align-items: center;
+}
+.header .header__zonaLogo {
+  grid-column: 2/4;
+}
+.header .header__zonaLogo img {
+  max-height: 150px;
+  width: auto;
+}
+.header .header__zonaNavegacion {
+  grid-column: 6/12;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .header__zonaNavegacion a {
+  font-family: "Urbanist";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main {
+  height: 90vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
+}
+.main .main__carrousel {
+  width: 100%;
+  height: 100%;
+  max-width: 140em;
+  overflow: hidden;
+  position: relative;
+}
+.main .main__carrousel .carrousel__grande {
+  width: 200%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+.main .main__carrousel .carrousel__grande .grande__picture {
+  width: calc(50% - 2em);
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main__carrousel .carrousel__grande .grande__picture .img {
+  width: 100%;
+  height: auto;
+}
+.main .main__carrousel .carrousel__botones {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.main .main__carrousel .carrousel__botones .botones__boton {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  background-color: rgba(105, 105, 105, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.main .main__carrousel .carrousel__botones .botones__boton:hover {
+  background-color: rgb(131, 129, 126);
+}
+.main .main__carrousel .carrousel__botones .activo {
+  background-color: rgb(95, 177, 255);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
+  height: 9vh;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px;
+  z-index: 2;
+}
+.footer__infoLegal {
+  font-family: "Urbanist";
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer__infoGeneral {
+  display: flex;
+  align-items: center;
+}
+.footer__infoGeneral a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: "Urbanist";
+  font-weight: bold;
+  font-size: 16px;
+}
+.footer__infoGeneral a:hover {
+  text-decoration: underline;
+}
+.footer__rrss {
+  display: flex;
+  align-items: center;
+}
+.footer__rrss a {
+  margin-left: 20px;
+}
+.footer__rrss img {
+  max-height: 25px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

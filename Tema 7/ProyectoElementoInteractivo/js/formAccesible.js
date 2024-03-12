@@ -16,8 +16,6 @@ window.onload = function () {
       // Redirigir a index.html
       window.location.href = "index.html";
     }
-    
-
   });
 
   // Función para cambiar la tipografía y el tamaño de fuente de todos los elementos del body
@@ -30,27 +28,26 @@ window.onload = function () {
       elementos[i].style.fontSize = nuevoTamanoFuente;
     }
   }
-
-  // Código del carrusel
+   // Código del carrusel
     // Seleccionamos el nodo con clase carrousel__grande
     const divCarrouselGrande = document.querySelector(".carrousel__grande");
 
     // Deberemos seleccionar todos los botones
     const botones = document.querySelectorAll(".botones__boton");
 
-   // Añadiremos un eventListener a cada botón
-botones.forEach((boton, i) => {
-  boton.addEventListener('click', () => {
-    // Quitamos la clase activo de todos los botones
-    botones.forEach((botonQuitar) => {
-      botonQuitar.classList.remove("activo");
+    // Añadiremos un eventListener a cada botón
+    botones.forEach((boton,i)=>{
+      boton.addEventListener('click',()=>{
+
+        // Quitamos la clase activo de todos los botones
+        botones.forEach((botonQuitar)=>{
+          botonQuitar.classList.remove("activo");
+        })
+        boton.classList.add("activo");
+
+        let calculoPx = i * -50;
+        divCarrouselGrande.style.transform = `translateX(${calculoPx}%)`
+      })
+      
     })
-    boton.classList.add("activo");
-
-    // Calculamos el desplazamiento en función del índice del botón
-    let calculoPx = i * -50; // Esto depende de cómo quieras desplazar tu carrusel
-    divCarrouselGrande.style.transform = `translateX(-${calculoPx}%)`;
-  })
-
-})
 };
