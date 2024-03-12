@@ -17,7 +17,6 @@
 body {
   padding: 0;
   margin: 0;
-  width: 100vw;
 }
 
 .header {
@@ -58,12 +57,11 @@ body {
   display: none;
   position: absolute;
   background-color: #1ABDF0;
-  width: 102%;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(17, 17, 17, 0.2);
   z-index: 1;
   margin-top: 1px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .header .header__zonaNavegacion .desplegable__contenido a {
   font-family: "Urbanist";
@@ -75,6 +73,7 @@ body {
   padding: 12px 16px;
   display: block;
   text-align: center;
+  margin: 0 auto;
 }
 .header .header__zonaNavegacion .desplegable__contenido a:hover {
   background-color: #abe2f3;
@@ -90,6 +89,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   background: linear-gradient(90deg, #F2F2F2 0%, rgba(26, 189, 240, 0.62) 121.53%);
 }
 .main .main__carrousel {
@@ -97,10 +97,9 @@ body {
   height: 100%;
   max-width: 140em;
   overflow: hidden;
-  position: relative;
 }
 .main .main__carrousel .carrousel__grande {
-  width: 200%;
+  width: 300%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -109,13 +108,13 @@ body {
   transform: translateX(0%);
 }
 .main .main__carrousel .carrousel__grande .grande__picture {
-  width: 50%;
+  width: 33.3333333333%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main .main__carrousel .carrousel__grande .grande__picture .img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .main .main__carrousel .carrousel__botones {

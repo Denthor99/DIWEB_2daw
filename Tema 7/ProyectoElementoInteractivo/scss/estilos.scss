@@ -31,7 +31,6 @@ $color-header--font: #000000;
 body {
     padding: 0;
     margin: 0;
-    width: 100vw;
 }
 
 .header {
@@ -66,23 +65,23 @@ body {
             color: $color-header--font;
             text-decoration: none;
         }
+
         .zonaNavegacion__desplegable {
             position: relative;
             display: inline-block;
         }
-        
+
         .desplegable__contenido {
             display: none;
             position: absolute;
             background-color: #1ABDF0;
-            width: 102%;
+            width: 100%;
             box-shadow: 0px 8px 16px 0px rgba(17, 17, 17, 0.2);
             z-index: 1;
             margin-top: 1px;
-            align-items: center;
-            justify-content: center;
+            text-align: center;
         }
-        
+
         .desplegable__contenido a {
             font-family: 'Urbanist';
             font-style: normal;
@@ -93,12 +92,13 @@ body {
             padding: 12px 16px;
             display: block;
             text-align: center;
+            margin: 0 auto;
         }
-        
+
         .desplegable__contenido a:hover {
             background-color: #abe2f3;
         }
-        
+
         .zonaNavegacion__desplegable:hover .desplegable__contenido {
             display: block;
         }
@@ -112,8 +112,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
     background: linear-gradient(90deg, $color1-header 0%, rgba($color2-header, 0.62) 121.53%);
-
     // .main__picture {
 
     //     overflow: hidden;
@@ -132,10 +132,9 @@ body {
         max-width: 140em;
         // padding: 1em;
         overflow: hidden;
-        position: relative;
 
         .carrousel__grande {
-            width: 200%;
+            width: 300%;
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
@@ -143,14 +142,15 @@ body {
             //padding: 1em;
             transition: all .5s ease;
             transform: translateX(0%);
+
             .grande__picture {
-                width: calc( 100% / 2);
+                width: calc(100% / 3);
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                
+
                 .img {
-                    width: 100%;
+                    max-width: 100%;
                     height: auto;
                 }
             }

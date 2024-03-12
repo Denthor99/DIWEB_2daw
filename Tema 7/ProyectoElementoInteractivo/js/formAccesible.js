@@ -45,7 +45,8 @@ window.onload = function () {
         })
         boton.classList.add("activo");
 
-        let calculoPx = i * -50;
+        // Ajusto el valor, debido a que usaré al final 3 imagenes en el carrusel
+        let calculoPx = i * - 33.33333;
         divCarrouselGrande.style.transform = `translateX(${calculoPx}%)`
       })
       
