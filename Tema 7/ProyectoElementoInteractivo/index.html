@@ -12,16 +12,31 @@
     <header class="header">
         <div class="header__zonaLogo" role="banner">
             <picture>
-                <source type="image/svg+xml" srcset="./images/logo.svg">
+                <source type="image/svg+xml" class="zonaLogo__svg" srcset="./images/logo.svg">
                 <source type="image/webp" srcset="./images/logo.webp">
                 <img src="./images/logo.png" alt="Logotipo de VirtualPriority, Sitio Web orientado al mundo de la realidad virtual">
             </picture>
         </div>
         <nav class="header__zonaNavegacion" role="navigation">
             <a href="#">Inicio</a>
-            <a href="#">Sobre AR/VR</a>
+            <div class="zonaNavegacion__desplegable">
+                <a href="#" class="desplegable__pointer">Sobre AR/VR</a>
+                <div class="desplegable__contenido">
+                    <a href="#">Realidad Virtual</a>
+                    <a href="#">Realidad Mixta</a>
+                    <a href="#">Formaciones</a>
+                </div>
+            </div>
             <a href="#">Tienda</a>
-            <a href="#">Software</a>
+            <div class="zonaNavegacion__desplegable">
+                <a href="#" class="desplegable__pointer">Software</a>
+                <div class="desplegable__contenido">
+                    <a href="#">Videojuegos</a>
+                    <a href="#">Experiencias</a>
+                    <a href="#">Librerías</a>
+                    <a href="#">Developers</a>
+                </div>
+            </div>
             <a href="index.html" >Contacto</a>
             <a href="#" id="opcionDislexia"><img src="images/accessibility 1.png" alt="Opción de accesibilidad (dislexia)"></a>
         </nav>
